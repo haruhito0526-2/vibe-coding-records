@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8f9fa"/>
+
+  <!-- ヘッダー -->
+  <text x="80" y="80" fill="#5da8d4" font-weight="600" font-size="22" letter-spacing="4" dominant-baseline="hanging">BEFORE / AFTER</text>
+  <text x="80" y="112" font-weight="700" font-size="48" dominant-baseline="hanging">
+    <tspan fill="#1f2937">半年で何が</tspan><tspan fill="#3a7ba8">変わったか</tspan>
+  </text>
+  <text x="1840" y="80" text-anchor="end" fill="#6b7280" font-weight="500" font-size="22" dominant-baseline="hanging">2025年11月 vs 2026年4月</text>
+  <text x="1840" y="116" text-anchor="end" fill="#3a7ba8" font-weight="700" font-size="32" letter-spacing="1.4" dominant-baseline="hanging">業務範囲の再定義</text>
+
+  <!-- BEFOREカード -->
+  <g>
+    <rect x="100" y="280" width="780" height="660" rx="20" fill="#9ca3af" opacity="0.10" filter="url(#softShadow)"/>
+    <rect x="100" y="274" width="780" height="660" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+
+    <!-- BEFOREラベル -->
+    <rect x="140" y="320" width="180" height="50" rx="25" fill="#9ca3af"/>
+    <text x="230" y="345" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-weight="700" font-size="22" letter-spacing="3">BEFORE</text>
+
+    <!-- アイコン枠（壊れたPC） -->
+    <rect x="350" y="410" width="280" height="180" rx="14" fill="#f3f4f6"/>
+    <g transform="translate(420, 440)" stroke="#9ca3af" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 10 L70 10 L70 80 L0 80 Z"/>
+      <line x1="-10" y1="100" x2="80" y2="100"/>
+      <!-- ヒビ -->
+      <path d="M20 10 L30 40 L25 50 L40 70" stroke="#6b7280" stroke-dasharray="4 3"/>
+      <path d="M50 20 L45 40 L55 60" stroke="#6b7280" stroke-dasharray="4 3"/>
+      <text x="50" y="55" font-size="40" fill="#6b7280" stroke="none" font-weight="700" text-anchor="middle">×</text>
+    </g>
+
+    <!-- タイトル -->
+    <text x="490" y="630" text-anchor="middle" fill="#4b5563" font-weight="700" font-size="36" dominant-baseline="hanging">壊れたまま動かない</text>
+
+    <!-- リスト -->
+    <g transform="translate(180, 710)">
+      <circle cx="10" cy="20" r="5" fill="#9ca3af"/>
+      <text x="32" y="22" fill="#4b5563" font-weight="500" font-size="22" dominant-baseline="central">5年放置、担当者は退職済み</text>
+
+      <circle cx="10" cy="68" r="5" fill="#9ca3af"/>
+      <text x="32" y="70" fill="#4b5563" font-weight="500" font-size="22" dominant-baseline="central">バージョン誤更新でレイアウト崩壊</text>
+
+      <circle cx="10" cy="116" r="5" fill="#9ca3af"/>
+      <text x="32" y="118" fill="#4b5563" font-weight="500" font-size="22" dominant-baseline="central">誰も触れず、騙し騙しで運用</text>
+
+      <circle cx="10" cy="164" r="5" fill="#9ca3af"/>
+      <text x="32" y="166" fill="#4b5563" font-weight="500" font-size="22" dominant-baseline="central">外注しないと直せない、と諦めていた</text>
+    </g>
+  </g>
+
+  <!-- 中央の矢印 -->
+  <g transform="translate(910, 590)">
+    <circle cx="50" cy="20" r="50" fill="#5da8d4" opacity="0.15"/>
+    <circle cx="50" cy="20" r="40" fill="#ffffff" stroke="#5da8d4" stroke-width="2"/>
+    <g transform="translate(20, 0)" stroke="#3a7ba8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <line x1="0" y1="20" x2="50" y2="20"/>
+      <polyline points="38,10 52,20 38,30"/>
+    </g>
+  </g>
+  <text x="960" y="685" text-anchor="middle" fill="#3a7ba8" font-weight="700" font-size="24" letter-spacing="2">6 MONTHS</text>
+
+  <!-- AFTERカード -->
+  <g>
+    <rect x="1040" y="280" width="780" height="660" rx="20" fill="#3a7ba8" opacity="0.12" filter="url(#softShadow)"/>
+    <rect x="1040" y="274" width="780" height="660" rx="20" fill="#ffffff" stroke="#d8e7f2" stroke-width="2"/>
+
+    <!-- AFTERラベル -->
+    <rect x="1080" y="320" width="180" height="50" rx="25" fill="#3a7ba8"/>
+    <text x="1170" y="345" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-weight="700" font-size="22" letter-spacing="3">AFTER</text>
+
+    <!-- アイコン枠（動くPC＋チェック） -->
+    <rect x="1290" y="410" width="280" height="180" rx="14" fill="#eaf4fb"/>
+    <g transform="translate(1360, 440)" stroke="#3a7ba8" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 10 L70 10 L70 80 L0 80 Z"/>
+      <line x1="-10" y1="100" x2="80" y2="100"/>
+      <line x1="10" y1="25" x2="60" y2="25"/>
+      <line x1="10" y1="40" x2="60" y2="40"/>
+      <line x1="10" y1="55" x2="40" y2="55"/>
+    </g>
+    <!-- チェックマーク（オレンジ） -->
+    <circle cx="1530" cy="445" r="22" fill="#f59e0b"/>
+    <polyline points="1518,445 1527,455 1542,438" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- タイトル -->
+    <text x="1430" y="630" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="36" dominant-baseline="hanging">自分で更新・改善できる</text>
+
+    <!-- リスト -->
+    <g transform="translate(1120, 710)">
+      <circle cx="10" cy="20" r="5" fill="#3a7ba8"/>
+      <text x="32" y="22" fill="#1f2937" font-weight="500" font-size="22" dominant-baseline="central">約250ページを3週間で全面リニューアル</text>
+
+      <circle cx="10" cy="68" r="5" fill="#3a7ba8"/>
+      <text x="32" y="70" fill="#1f2937" font-weight="500" font-size="22" dominant-baseline="central">業務ツール14個を内製で稼働中</text>
+
+      <circle cx="10" cy="116" r="5" fill="#3a7ba8"/>
+      <text x="32" y="118" fill="#1f2937" font-weight="500" font-size="22" dominant-baseline="central">業務インフラを自分の手で動かせる</text>
+
+      <circle cx="10" cy="164" r="5" fill="#3a7ba8"/>
+      <text x="32" y="166" fill="#1f2937" font-weight="500" font-size="22" dominant-baseline="central">ディレクション=AI内製化スキル、と気づいた</text>
+    </g>
+  </g>
+
+  <!-- フッター：気づきの一言 -->
+  <g>
+    <rect x="540" y="1000" width="840" height="56" rx="28" fill="#ffffff" stroke="#d8e7f2" stroke-width="1.5"/>
+    <circle cx="570" cy="1028" r="5" fill="#f59e0b"/>
+    <text x="592" y="1028" dominant-baseline="central" fill="#3a7ba8" font-weight="600" font-size="22" letter-spacing="0.8">変わったのはWebじゃなくて、自分の業務範囲の定義</text>
+  </g>
+</svg>
