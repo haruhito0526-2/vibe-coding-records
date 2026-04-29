@@ -117,7 +117,11 @@ def rewrite_image_paths(html: str, base_url: str) -> str:
 
 def render_html(md_text: str, base_url: str) -> str:
     html = md_lib.markdown(md_text, extensions=MARKDOWN_EXTENSIONS)
-    return rewrite_image_paths(html, base_url)
+    html = rewrite_image_paths(html, base_url)
+    # noteインポート時、</p><p>境目に空段落ブロックが自動挿入されるのを回避するため、
+    # 連続するp要素を<br><br>で同一段落に連結する（リスト・見出し・画像前後は影響なし）
+    html = re.sub(r"</p>\s*<p>", "<br /><br />", html)
+    return html
 
 
 def to_rfc822(dt: datetime) -> str:
