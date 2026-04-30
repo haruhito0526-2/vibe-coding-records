@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="softShadow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+    <filter id="smoke" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8f9fa"/>
+
+  <!-- ヘッダー -->
+  <text x="80" y="80" fill="#5da8d4" font-weight="600" font-size="22" letter-spacing="4" dominant-baseline="hanging">THE METAPHOR</text>
+  <text x="80" y="112" font-weight="700" font-size="48" dominant-baseline="hanging">
+    <tspan fill="#1f2937">直すんじゃない、</tspan><tspan fill="#3a7ba8">隣に新しいのを建てる</tspan>
+  </text>
+  <text x="1840" y="80" text-anchor="end" fill="#6b7280" font-weight="500" font-size="22" dominant-baseline="hanging">CHAPTER 3 / AI Studioの一言</text>
+
+  <!-- 左：古い家ブロック -->
+  <g>
+    <rect x="80" y="276" width="700" height="640" rx="12" fill="#94a3b8" opacity="0.10" filter="url(#softShadow3)"/>
+    <rect x="80" y="270" width="700" height="640" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+    <text x="430" y="316" text-anchor="middle" fill="#94a3b8" font-weight="600" font-size="22" letter-spacing="2" dominant-baseline="hanging">BEFORE</text>
+    <text x="430" y="354" text-anchor="middle" fill="#475569" font-weight="700" font-size="36" dominant-baseline="hanging">古い本番サイト</text>
+
+    <!-- 煙（薄い円） -->
+    <circle cx="350" cy="450" r="22" fill="#cbd5e1" opacity="0.5" filter="url(#smoke)"/>
+    <circle cx="380" cy="430" r="18" fill="#cbd5e1" opacity="0.4" filter="url(#smoke)"/>
+    <circle cx="410" cy="445" r="14" fill="#cbd5e1" opacity="0.3" filter="url(#smoke)"/>
+
+    <!-- 古い家：屋根（傾いている） -->
+    <polygon points="290,580 580,580 445,440" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+    <!-- 屋根のヒビ -->
+    <line x1="380" y1="490" x2="430" y2="560" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- 本体 -->
+    <rect x="320" y="580" width="240" height="220" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+    <!-- 本体のヒビ -->
+    <path d="M 360 600 L 380 660 L 370 720 L 390 780" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 510 620 L 500 670 L 520 740" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- 窓（割れている：×印） -->
+    <rect x="350" y="620" width="60" height="60" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+    <line x1="350" y1="620" x2="410" y2="680" stroke="#dc2626" stroke-width="2.5"/>
+    <line x1="410" y1="620" x2="350" y2="680" stroke="#dc2626" stroke-width="2.5"/>
+
+    <rect x="470" y="620" width="60" height="60" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+    <line x1="470" y1="620" x2="530" y2="680" stroke="#dc2626" stroke-width="2.5"/>
+    <line x1="530" y1="620" x2="470" y2="680" stroke="#dc2626" stroke-width="2.5"/>
+
+    <!-- 扉 -->
+    <rect x="410" y="710" width="60" height="90" fill="#64748b" stroke="#475569" stroke-width="2"/>
+
+    <!-- 注釈 -->
+    <rect x="395" y="838" width="70" height="2" rx="1" fill="#cbd5e1"/>
+    <text x="430" y="858" text-anchor="middle" fill="#64748b" font-weight="400" font-size="22" dominant-baseline="hanging">
+      <tspan x="430" dy="0">5年放置・サイトネットワーク・古いPHP</tspan>
+      <tspan x="430" dy="32" font-weight="600" fill="#475569">直そうとしても、崩れるリスクが高い</tspan>
+    </text>
+  </g>
+
+  <!-- 中央：引っ越しの矢印 -->
+  <g>
+    <!-- 矢印の幹 -->
+    <line x1="800" y1="600" x2="1120" y2="600" stroke="#f59e0b" stroke-width="6" stroke-linecap="round"/>
+    <polyline points="1108,585 1124,600 1108,615" stroke="#f59e0b" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- 段ボール箱（コンテンツの象徴） -->
+    <g transform="translate(890, 510)">
+      <rect x="0" y="0" width="80" height="64" fill="#f59e0b" opacity="0.25"/>
+      <rect x="0" y="0" width="80" height="64" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+      <line x1="40" y1="0" x2="40" y2="64" stroke="#f59e0b" stroke-width="2"/>
+      <line x1="0" y1="20" x2="80" y2="20" stroke="#f59e0b" stroke-width="2"/>
+    </g>
+    <g transform="translate(960, 525)">
+      <rect x="0" y="0" width="64" height="50" fill="#f59e0b" opacity="0.25"/>
+      <rect x="0" y="0" width="64" height="50" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+      <line x1="32" y1="0" x2="32" y2="50" stroke="#f59e0b" stroke-width="2"/>
+      <line x1="0" y1="16" x2="64" y2="16" stroke="#f59e0b" stroke-width="2"/>
+    </g>
+
+    <!-- ラベル -->
+    <text x="960" y="478" text-anchor="middle" fill="#f59e0b" font-weight="700" font-size="22" letter-spacing="2" dominant-baseline="hanging">MOVE IN</text>
+
+    <!-- 矢印の下のラベル -->
+    <text x="960" y="640" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="32" dominant-baseline="hanging">荷物（コンテンツ）だけ</text>
+    <text x="960" y="682" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="32" dominant-baseline="hanging">運び込む</text>
+    <text x="960" y="730" text-anchor="middle" fill="#6b7280" font-weight="400" font-size="22" dominant-baseline="hanging">200件の記事・実績・画像</text>
+  </g>
+
+  <!-- 右：新しい家ブロック -->
+  <g>
+    <rect x="1140" y="276" width="700" height="640" rx="12" fill="#3a7ba8" opacity="0.10" filter="url(#softShadow3)"/>
+    <rect x="1140" y="270" width="700" height="640" rx="12" fill="#ffffff" stroke="#cfe1ee" stroke-width="2"/>
+
+    <text x="1490" y="316" text-anchor="middle" fill="#5da8d4" font-weight="600" font-size="22" letter-spacing="2" dominant-baseline="hanging">AFTER</text>
+    <text x="1490" y="354" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="36" dominant-baseline="hanging">新しいサイト（隣の土地）</text>
+
+    <!-- 光のドット（キラッ） -->
+    <text x="1370" y="438" font-size="28" fill="#f59e0b" font-weight="700">✦</text>
+    <text x="1610" y="450" font-size="22" fill="#5da8d4" font-weight="700">✦</text>
+    <text x="1390" y="510" font-size="18" fill="#a8d4ee" font-weight="700">✦</text>
+
+    <!-- 新しい家：屋根（整っている） -->
+    <polygon points="1350,580 1640,580 1495,440" fill="#5da8d4" stroke="#3a7ba8" stroke-width="2"/>
+    <!-- 屋根のライン -->
+    <line x1="1495" y1="440" x2="1495" y2="580" stroke="#3a7ba8" stroke-width="1.5" opacity="0.4"/>
+
+    <!-- 本体 -->
+    <rect x="1380" y="580" width="240" height="220" fill="#eaf4fb" stroke="#3a7ba8" stroke-width="2"/>
+
+    <!-- 窓（大きく整っている） -->
+    <rect x="1410" y="620" width="60" height="60" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="2"/>
+    <line x1="1440" y1="620" x2="1440" y2="680" stroke="#3a7ba8" stroke-width="1.5"/>
+    <line x1="1410" y1="650" x2="1470" y2="650" stroke="#3a7ba8" stroke-width="1.5"/>
+
+    <rect x="1530" y="620" width="60" height="60" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="2"/>
+    <line x1="1560" y1="620" x2="1560" y2="680" stroke="#3a7ba8" stroke-width="1.5"/>
+    <line x1="1530" y1="650" x2="1590" y2="650" stroke="#3a7ba8" stroke-width="1.5"/>
+
+    <!-- 扉 -->
+    <rect x="1470" y="710" width="60" height="90" fill="#3a7ba8" stroke="#3a7ba8" stroke-width="2"/>
+    <circle cx="1518" cy="755" r="3" fill="#a8d4ee"/>
+
+    <!-- NEWバッジ -->
+    <g transform="translate(1660, 460)">
+      <circle cx="0" cy="0" r="38" fill="#f59e0b"/>
+      <text x="0" y="0" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-weight="700" font-size="22">NEW</text>
+    </g>
+
+    <!-- 注釈 -->
+    <rect x="1455" y="838" width="70" height="2" rx="1" fill="#a8d4ee"/>
+    <text x="1490" y="858" text-anchor="middle" fill="#4b5563" font-weight="400" font-size="22" dominant-baseline="hanging">
+      <tspan x="1490" dy="0">テーマもファイル構成もゼロから自作</tspan>
+      <tspan x="1490" dy="32" font-weight="600" fill="#3a7ba8">本番には指一本触れずに、好きなだけ試行錯誤</tspan>
+    </text>
+  </g>
+
+  <!-- フッター -->
+  <g>
+    <rect x="540" y="970" width="840" height="56" rx="28" fill="#ffffff" stroke="#d8e7f2" stroke-width="1.5"/>
+    <circle cx="570" cy="998" r="5" fill="#5da8d4"/>
+    <text x="592" y="998" dominant-baseline="central" fill="#3a7ba8" font-weight="600" font-size="22" letter-spacing="0.6">直すんじゃなくて、新しいのを建てて引っ越す。これがAIから返ってきた方針だった</text>
+  </g>
+</svg>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="softShadow5" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8f9fa"/>
+
+  <!-- ヘッダー -->
+  <text x="80" y="80" fill="#5da8d4" font-weight="600" font-size="22" letter-spacing="4" dominant-baseline="hanging">THE WORKSTATION</text>
+  <text x="80" y="112" font-weight="700" font-size="48" dominant-baseline="hanging">
+    <tspan fill="#1f2937">PC1台の中に、</tspan><tspan fill="#3a7ba8">現場と相棒を立てる</tspan>
+  </text>
+  <text x="1840" y="80" text-anchor="end" fill="#6b7280" font-weight="500" font-size="22" dominant-baseline="hanging">CHAPTER 4 / 隣の土地を準備する</text>
+
+  <!-- ===== 外枠：ノートPCのモニター部 ===== -->
+  <rect x="80" y="226" width="1760" height="700" rx="14" fill="#3a7ba8" opacity="0.10" filter="url(#softShadow5)"/>
+  <rect x="80" y="220" width="1760" height="700" rx="14" fill="#ffffff" stroke="#cfe1ee" stroke-width="2"/>
+
+  <!-- PCタイトルバー風 -->
+  <rect x="80" y="220" width="1760" height="44" rx="14" fill="#eaf4fb"/>
+  <rect x="80" y="252" width="1760" height="12" fill="#eaf4fb"/>
+  <circle cx="116" cy="242" r="7" fill="#fca5a5"/>
+  <circle cx="142" cy="242" r="7" fill="#fcd34d"/>
+  <circle cx="168" cy="242" r="7" fill="#86efac"/>
+  <text x="960" y="242" text-anchor="middle" dominant-baseline="central" fill="#5da8d4" font-weight="600" font-size="18" letter-spacing="3">MY MACHINE / 自分のパソコン1台の中</text>
+
+  <!-- ===== ノートPCの台座 ===== -->
+  <rect x="40" y="930" width="1840" height="14" rx="6" fill="#cfe1ee"/>
+  <rect x="40" y="944" width="1840" height="6" rx="3" fill="#a8d4ee"/>
+
+  <!-- ===== 左カード：LOCAL ===== -->
+  <g>
+    <rect x="160" y="300" width="700" height="560" rx="12" fill="#3a7ba8" opacity="0.06"/>
+    <rect x="160" y="294" width="700" height="560" rx="12" fill="#ffffff" stroke="#cfe1ee" stroke-width="1.5"/>
+
+    <!-- アイコン背景 -->
+    <circle cx="510" cy="380" r="46" fill="#eaf4fb"/>
+    <!-- WordPressっぽい家マーク（サーバー＋WPの示唆） -->
+    <g transform="translate(510, 380)">
+      <rect x="-26" y="-14" width="52" height="36" rx="3" fill="none" stroke="#3a7ba8" stroke-width="2.5"/>
+      <line x1="-20" y1="-4" x2="20" y2="-4" stroke="#3a7ba8" stroke-width="2"/>
+      <circle cx="-16" cy="-9" r="1.5" fill="#3a7ba8"/>
+      <circle cx="-10" cy="-9" r="1.5" fill="#3a7ba8"/>
+      <text x="0" y="14" text-anchor="middle" dominant-baseline="central" fill="#3a7ba8" font-weight="700" font-size="14">WP</text>
+    </g>
+
+    <text x="510" y="446" text-anchor="middle" fill="#5da8d4" font-weight="600" font-size="20" letter-spacing="3" dominant-baseline="hanging">LOCAL</text>
+    <text x="510" y="478" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="32" dominant-baseline="hanging">隣の土地（WP環境）</text>
+
+    <rect x="475" y="538" width="70" height="2" rx="1" fill="#a8d4ee"/>
+
+    <!-- 機能リスト -->
+    <g transform="translate(220, 580)">
+      <circle cx="10" cy="14" r="5" fill="#5da8d4"/>
+      <text x="32" y="14" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="22">自分のPC内に新しいWP環境を立てる</text>
+    </g>
+    <g transform="translate(220, 626)">
+      <circle cx="10" cy="14" r="5" fill="#5da8d4"/>
+      <text x="32" y="14" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="22">本番サイトには指一本触れない</text>
+    </g>
+    <g transform="translate(220, 672)">
+      <circle cx="10" cy="14" r="5" fill="#5da8d4"/>
+      <text x="32" y="14" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="22">失敗しても誰にも迷惑がかからない</text>
+    </g>
+
+    <text x="510" y="780" text-anchor="middle" fill="#3a7ba8" font-weight="700" font-size="22" dominant-baseline="hanging">ここで好きなだけ試行錯誤できる</text>
+  </g>
+
+  <!-- ===== 中央：双方向矢印 ===== -->
+  <g>
+    <text x="960" y="540" text-anchor="middle" fill="#f59e0b" font-weight="700" font-size="20" letter-spacing="3" dominant-baseline="hanging">SYNC</text>
+
+    <!-- 双方向矢印（1本） -->
+    <g stroke="#3a7ba8" stroke-width="3" stroke-linecap="round" fill="none">
+      <line x1="867" y1="585" x2="1053" y2="585"/>
+      <polyline points="879,576 867,585 879,594"/>
+      <polyline points="1041,576 1053,585 1041,594"/>
+    </g>
+
+    <text x="960" y="615" text-anchor="middle" fill="#6b7280" font-weight="500" font-size="20" dominant-baseline="hanging">
+      <tspan x="960" dy="0">同じPC内で</tspan>
+      <tspan x="960" dy="28">読み書きする</tspan>
+    </text>
+  </g>
+
+  <!-- ===== 右カード：ANTIGRAVITY ===== -->
+  <g>
+    <rect x="1060" y="300" width="700" height="560" rx="12" fill="#3a7ba8" opacity="0.06"/>
+    <rect x="1060" y="294" width="700" height="560" rx="12" fill="#ffffff" stroke="#cfe1ee" stroke-width="1.5"/>
+
+    <!-- アイコン背景 -->
+    <circle cx="1410" cy="380" r="46" fill="#eaf4fb"/>
+    <!-- AIエージェントを示すロボット顔 -->
+    <g transform="translate(1410, 380)">
+      <rect x="-26" y="-20" width="52" height="40" rx="8" fill="none" stroke="#3a7ba8" stroke-width="2.5"/>
+      <circle cx="-10" cy="-4" r="3.5" fill="#3a7ba8"/>
+      <circle cx="10" cy="-4" r="3.5" fill="#3a7ba8"/>
+      <line x1="-8" y1="10" x2="8" y2="10" stroke="#3a7ba8" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="0" y1="-26" x2="0" y2="-20" stroke="#3a7ba8" stroke-width="2.5"/>
+      <circle cx="0" cy="-30" r="3" fill="#f59e0b"/>
+    </g>
+
+    <text x="1410" y="446" text-anchor="middle" fill="#5da8d4" font-weight="600" font-size="20" letter-spacing="3" dominant-baseline="hanging">ANTIGRAVITY</text>
+    <text x="1410" y="478" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="32" dominant-baseline="hanging">建てる相棒（AIエージェント）</text>
+
+    <rect x="1375" y="538" width="70" height="2" rx="1" fill="#a8d4ee"/>
+
+    <!-- 機能リスト -->
+    <g transform="translate(1120, 580)">
+      <circle cx="10" cy="14" r="5" fill="#5da8d4"/>
+      <text x="32" y="14" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="22">テーマファイル一式をコード生成</text>
+    </g>
+    <g transform="translate(1120, 626)">
+      <circle cx="10" cy="14" r="5" fill="#5da8d4"/>
+      <text x="32" y="14" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="22">PHP・CSSを直接編集</text>
+    </g>
+    <g transform="translate(1120, 672)">
+      <circle cx="10" cy="14" r="5" fill="#5da8d4"/>
+      <text x="32" y="14" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="22">長いコードを一度に読める（無料トライアル中）</text>
+    </g>
+
+    <text x="1410" y="780" text-anchor="middle" fill="#3a7ba8" font-weight="700" font-size="22" dominant-baseline="hanging">ここに「こう作って」と頼む</text>
+  </g>
+
+  <!-- フッター注釈 -->
+  <g>
+    <rect x="500" y="990" width="920" height="56" rx="28" fill="#ffffff" stroke="#d8e7f2" stroke-width="1.5"/>
+    <circle cx="530" cy="1018" r="5" fill="#f59e0b"/>
+    <text x="552" y="1018" dominant-baseline="central" fill="#3a7ba8" font-weight="600" font-size="22" letter-spacing="0.6">自分の役割は、チャットで「こうしたい」「ここおかしい」を伝えるだけ</text>
+  </g>
+</svg>

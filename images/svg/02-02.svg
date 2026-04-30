@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="softShadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8f9fa"/>
+
+  <!-- ヘッダー -->
+  <text x="80" y="80" fill="#5da8d4" font-weight="600" font-size="22" letter-spacing="4" dominant-baseline="hanging">THE WALL</text>
+  <text x="80" y="112" font-weight="700" font-size="48" dominant-baseline="hanging">
+    <tspan fill="#1f2937">外注見積もりの</tspan><tspan fill="#3a7ba8">壁、そして分岐</tspan>
+  </text>
+  <text x="1840" y="80" text-anchor="end" fill="#6b7280" font-weight="500" font-size="22" dominant-baseline="hanging">CHAPTER 1 / 朝、画面が崩れた日</text>
+
+  <!-- 左：壁ブロック -->
+  <g>
+    <rect x="80" y="276" width="700" height="664" rx="12" fill="#3a7ba8" opacity="0.10" filter="url(#softShadow2)"/>
+    <rect x="80" y="270" width="700" height="664" rx="12" fill="#ffffff" stroke="#ecf2f7" stroke-width="1"/>
+
+    <!-- ラベル -->
+    <text x="430" y="320" text-anchor="middle" fill="#5da8d4" font-weight="600" font-size="22" letter-spacing="2" dominant-baseline="hanging">外注見積もり（過去に取得）</text>
+
+    <!-- 大きな金額：400を主役、万円〜を右下に配置 -->
+    <g transform="translate(190, 400)">
+      <!-- 400（メイン、大きく） -->
+      <text x="0" y="0" font-size="170" font-weight="700" fill="#1f2937" dominant-baseline="hanging" letter-spacing="-3">400</text>
+      <!-- 万円〜（右下に配置：万円は黒、〜は青） -->
+      <text x="365" y="100" font-size="56" font-weight="700" fill="#1f2937" dominant-baseline="hanging">万円<tspan fill="#3a7ba8" font-size="68" dx="2">〜</tspan></text>
+    </g>
+
+    <!-- 期間 -->
+    <text x="430" y="640" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="60" dominant-baseline="hanging">最低 3〜4ヶ月</text>
+
+    <!-- 区切り線 -->
+    <rect x="395" y="760" width="70" height="2" rx="1" fill="#a8d4ee"/>
+
+    <!-- 注釈 -->
+    <text x="430" y="790" text-anchor="middle" fill="#6b7280" font-weight="400" font-size="22" dominant-baseline="hanging">
+      <tspan x="430" dy="0">これは「ゼロから普通に作り直す場合」の値段。</tspan>
+      <tspan x="430" dy="32">壊れたところからのリカバリーは、</tspan>
+      <tspan x="430" dy="32">調査からやり直すぶん、もっとかかる。</tspan>
+    </text>
+  </g>
+
+  <!-- 中央：分岐の幹 -->
+  <g stroke="#a8d4ee" stroke-width="3" stroke-linecap="round" fill="none">
+    <line x1="784" y1="600" x2="900" y2="600"/>
+  </g>
+  <!-- 上分岐線 -->
+  <g stroke="#a8d4ee" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <line x1="900" y1="600" x2="900" y2="430"/>
+    <line x1="900" y1="430" x2="970" y2="430"/>
+    <polyline points="964,423 976,430 964,437"/>
+  </g>
+  <!-- 下分岐線（オレンジ強調） -->
+  <g stroke="#f59e0b" stroke-width="3" stroke-linecap="round" fill="none">
+    <line x1="900" y1="600" x2="900" y2="780"/>
+    <line x1="900" y1="780" x2="970" y2="780"/>
+    <polyline points="964,773 976,780 964,787"/>
+  </g>
+
+  <!-- 右上：外注一択カード（グレーアウト気味） -->
+  <g>
+    <rect x="990" y="280" width="850" height="300" rx="12" fill="#94a3b8" opacity="0.08" filter="url(#softShadow2)"/>
+    <rect x="990" y="274" width="850" height="300" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+    <text x="1030" y="316" fill="#94a3b8" font-weight="600" font-size="22" letter-spacing="2" dominant-baseline="hanging">選択肢 A</text>
+
+    <text x="1030" y="358" fill="#475569" font-weight="700" font-size="44" dominant-baseline="hanging">外注一択</text>
+
+    <rect x="1030" y="438" width="36" height="2" rx="1" fill="#cbd5e1"/>
+
+    <text x="1030" y="466" fill="#64748b" font-weight="400" font-size="24" dominant-baseline="hanging">
+      <tspan x="1030" dy="0">普通に考えれば、これしかない。</tspan>
+      <tspan x="1030" dy="36" font-weight="600" fill="#475569">でも400万円は現実的に無理だった。</tspan>
+    </text>
+  </g>
+
+  <!-- 右下：AIに相談カード（オレンジ強調） -->
+  <g>
+    <rect x="990" y="636" width="850" height="304" rx="12" fill="#f59e0b" opacity="0.12" filter="url(#softShadow2)"/>
+    <rect x="990" y="630" width="850" height="304" rx="12" fill="#ffffff" stroke="#fde6c1" stroke-width="2"/>
+
+    <text x="1030" y="672" fill="#f59e0b" font-weight="700" font-size="22" letter-spacing="2" dominant-baseline="hanging">選択肢 B / この記事の入口</text>
+
+    <text x="1030" y="714" fill="#1f2937" font-weight="700" font-size="44" dominant-baseline="hanging">でも、その前にAIに相談してみた</text>
+
+    <rect x="1030" y="794" width="36" height="2" rx="1" fill="#f59e0b"/>
+
+    <text x="1030" y="822" fill="#4b5563" font-weight="400" font-size="24" dominant-baseline="hanging">
+      <tspan x="1030" dy="0">「どうしたらいいか」をGeminiとChatGPTに投げる。</tspan>
+      <tspan x="1030" dy="36" font-weight="600" fill="#3a7ba8">この一手から、3週間の作り直しが始まった。</tspan>
+    </text>
+  </g>
+
+  <!-- フッター注釈 -->
+  <g>
+    <rect x="660" y="980" width="600" height="56" rx="28" fill="#ffffff" stroke="#d8e7f2" stroke-width="1.5"/>
+    <circle cx="690" cy="1008" r="5" fill="#5da8d4"/>
+    <text x="712" y="1008" dominant-baseline="central" fill="#3a7ba8" font-weight="600" font-size="22" letter-spacing="0.8">壊れたサイト × 外注400万円 = 一旦AIに聞いてみる</text>
+  </g>
+</svg>
