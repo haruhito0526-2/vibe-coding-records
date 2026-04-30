@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <!-- 上部 -->
+  <text x="80" y="60" fill="#5da8d4" font-weight="600" font-size="18" letter-spacing="3" dominant-baseline="hanging">中小企業のひとりDX担当が、AIで会社をアップデートする</text>
+  <line x1="80" y1="98" x2="200" y2="98" stroke="#5da8d4" stroke-width="3"/>
+  <text x="1200" y="60" text-anchor="end" fill="#f59e0b" font-weight="700" font-size="22" letter-spacing="2" dominant-baseline="hanging">#05 — PIPELINE ①</text>
+
+  <!-- メインタイトル -->
+  <text x="80" y="170" font-weight="700" font-size="58" dominant-baseline="hanging">
+    <tspan fill="#1f2937">このnote連載、</tspan>
+  </text>
+  <text x="80" y="248" font-weight="700" font-size="58" dominant-baseline="hanging">
+    <tspan fill="#1f2937">ほぼ</tspan><tspan fill="#3a7ba8">スマホ</tspan><tspan fill="#1f2937">で</tspan>
+  </text>
+  <text x="80" y="326" font-weight="700" font-size="58" dominant-baseline="hanging">
+    <tspan fill="#1f2937">作っています。</tspan>
+  </text>
+  <text x="80" y="404" font-weight="700" font-size="58" dominant-baseline="hanging">
+    <tspan fill="#1f2937">その</tspan><tspan fill="#f59e0b">狙い</tspan><tspan fill="#1f2937">の話。</tspan>
+  </text>
+
+  <!-- 右：スマホの中で記事が組み上がる -->
+  <g>
+    <!-- スマホ外形 -->
+    <rect x="900" y="160" width="200" height="370" rx="24" fill="#fff" stroke="#3a7ba8" stroke-width="4"/>
+    <!-- スピーカー -->
+    <rect x="980" y="176" width="40" height="6" rx="3" fill="#a8d4ee"/>
+    <!-- 画面エリア -->
+    <rect x="916" y="196" width="168" height="306" rx="6" fill="#eaf4fb"/>
+    <!-- ホームバー -->
+    <rect x="990" y="514" width="20" height="3" rx="1.5" fill="#3a7ba8"/>
+
+    <!-- 画面内：原稿 -->
+    <g transform="translate(944, 214)">
+      <rect x="0" y="0" width="112" height="62" rx="6" fill="#fff" stroke="#5da8d4" stroke-width="2"/>
+      <line x1="14" y1="16" x2="98" y2="16" stroke="#5da8d4" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="14" y1="32" x2="98" y2="32" stroke="#5da8d4" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="14" y1="48" x2="78" y2="48" stroke="#5da8d4" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- 矢印1 -->
+    <g stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="1000" y1="290" x2="1000" y2="312"/>
+      <polyline points="993,304 1000,312 1007,304"/>
+    </g>
+
+    <!-- 画面内：画像 -->
+    <g transform="translate(944, 318)">
+      <rect x="0" y="0" width="112" height="62" rx="6" fill="#fef3e2" stroke="#f59e0b" stroke-width="2"/>
+      <circle cx="86" cy="20" r="9" fill="#f59e0b"/>
+      <polyline points="14,54 34,32 56,46 80,24 100,34" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- 矢印2 -->
+    <g stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="1000" y1="394" x2="1000" y2="416"/>
+      <polyline points="993,408 1000,416 1007,408"/>
+    </g>
+
+    <!-- 画面内：XML -->
+    <g transform="translate(944, 422)">
+      <rect x="0" y="0" width="112" height="62" rx="6" fill="#fff" stroke="#3a7ba8" stroke-width="2"/>
+      <text x="56" y="34" text-anchor="middle" dominant-baseline="central" fill="#3a7ba8" font-weight="700" font-size="22" letter-spacing="2">XML</text>
+    </g>
+  </g>
+
+  <!-- フッターキャッチ -->
+  <g>
+    <rect x="280" y="568" width="720" height="52" rx="26" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="312" cy="594" r="6" fill="#f59e0b"/>
+    <text x="334" y="594" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20" letter-spacing="0.5">考えると体験だけ残して、あとはAIに渡す</text>
+  </g>
+</svg>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="softShadow55" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8f9fa"/>
+
+  <!-- ヘッダー -->
+  <text x="80" y="80" fill="#5da8d4" font-weight="600" font-size="22" letter-spacing="4" dominant-baseline="hanging">CHAPTER 05 — 95% / 5%</text>
+  <text x="80" y="112" font-weight="700" font-size="44" dominant-baseline="hanging">
+    <tspan fill="#1f2937">スマホで</tspan><tspan fill="#3a7ba8">95%完結</tspan><tspan fill="#1f2937">、残り5%は</tspan><tspan fill="#f59e0b">アップロード操作</tspan>
+  </text>
+  <text x="1840" y="80" text-anchor="end" fill="#6b7280" font-weight="500" font-size="22" dominant-baseline="hanging">VOL.5 — PIPELINE ①</text>
+  <text x="1840" y="116" text-anchor="end" fill="#f59e0b" font-weight="700" font-size="32" letter-spacing="1.4" dominant-baseline="hanging">95%</text>
+
+  <!-- 左：スマホ 95% -->
+  <g>
+    <rect x="120" y="240" width="900" height="660" rx="14" fill="#3a7ba8" opacity="0.10" filter="url(#softShadow55)"/>
+    <rect x="120" y="234" width="900" height="660" rx="14" fill="#fff" stroke="#3a7ba8" stroke-width="2"/>
+    <rect x="150" y="270" width="160" height="36" rx="18" fill="#eaf4fb"/>
+    <text x="230" y="288" text-anchor="middle" dominant-baseline="central" fill="#3a7ba8" font-weight="700" font-size="18" letter-spacing="1.5">SMARTPHONE</text>
+    <text x="340" y="282" fill="#3a7ba8" font-weight="700" font-size="60" letter-spacing="1" dominant-baseline="hanging">95%</text>
+    <text x="150" y="370" fill="#1f2937" font-weight="700" font-size="28" dominant-baseline="hanging">記事制作の本体は、ぜんぶスマホで</text>
+
+    <!-- スマホ -->
+    <g>
+      <rect x="200" y="430" width="240" height="430" rx="28" fill="#fff" stroke="#3a7ba8" stroke-width="4"/>
+      <rect x="296" y="448" width="48" height="6" rx="3" fill="#a8d4ee"/>
+      <rect x="220" y="470" width="200" height="358" rx="6" fill="#eaf4fb"/>
+      <rect x="305" y="842" width="30" height="4" rx="2" fill="#3a7ba8"/>
+
+      <!-- 画面内アイテム -->
+      <g transform="translate(238, 490)">
+        <rect x="0" y="0" width="164" height="62" rx="6" fill="#fff" stroke="#5da8d4" stroke-width="2"/>
+        <line x1="14" y1="16" x2="150" y2="16" stroke="#5da8d4" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="14" y1="32" x2="150" y2="32" stroke="#5da8d4" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="14" y1="48" x2="120" y2="48" stroke="#5da8d4" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <g stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="320" y1="566" x2="320" y2="586"/>
+        <polyline points="313,580 320,586 327,580"/>
+      </g>
+      <g transform="translate(238, 596)">
+        <rect x="0" y="0" width="164" height="62" rx="6" fill="#fef3e2" stroke="#f59e0b" stroke-width="2"/>
+        <circle cx="130" cy="20" r="9" fill="#f59e0b"/>
+        <polyline points="14,54 36,32 60,46 86,24 110,34 150,38" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="320" y1="672" x2="320" y2="692"/>
+        <polyline points="313,686 320,692 327,686"/>
+      </g>
+      <g transform="translate(238, 702)">
+        <rect x="0" y="0" width="164" height="62" rx="6" fill="#fff" stroke="#3a7ba8" stroke-width="2"/>
+        <text x="82" y="34" text-anchor="middle" dominant-baseline="central" fill="#3a7ba8" font-weight="700" font-size="22" letter-spacing="2">XML</text>
+      </g>
+    </g>
+
+    <!-- 機能リスト -->
+    <g transform="translate(490, 460)">
+      <g><circle cx="6" cy="12" r="6" fill="#3a7ba8"/><text x="22" y="12" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20">原稿の構成・校正</text></g>
+      <g transform="translate(0, 60)"><circle cx="6" cy="12" r="6" fill="#3a7ba8"/><text x="22" y="12" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20">画像の生成・確認</text></g>
+      <g transform="translate(0, 120)"><circle cx="6" cy="12" r="6" fill="#3a7ba8"/><text x="22" y="12" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20">図解の生成・確認</text></g>
+      <g transform="translate(0, 180)"><circle cx="6" cy="12" r="6" fill="#3a7ba8"/><text x="22" y="12" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20">XMLへの変換</text></g>
+      <g transform="translate(0, 240)"><circle cx="6" cy="12" r="6" fill="#3a7ba8"/><text x="22" y="12" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20">画像のサーバー配信</text></g>
+      <g transform="translate(0, 300)"><circle cx="6" cy="12" r="6" fill="#3a7ba8"/><text x="22" y="12" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20">判断と確認</text></g>
+    </g>
+  </g>
+
+  <!-- 右：PC 5% -->
+  <g>
+    <rect x="1080" y="240" width="720" height="660" rx="14" fill="#f59e0b" opacity="0.10" filter="url(#softShadow55)"/>
+    <rect x="1080" y="234" width="720" height="660" rx="14" fill="#fff" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="1110" y="270" width="100" height="36" rx="18" fill="#fef3e2"/>
+    <text x="1160" y="288" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="18" letter-spacing="1.5">PC</text>
+    <text x="1230" y="282" fill="#f59e0b" font-weight="700" font-size="60" letter-spacing="1" dominant-baseline="hanging">5%</text>
+    <text x="1110" y="370" fill="#1f2937" font-weight="700" font-size="28" dominant-baseline="hanging">残るのは、アップロード操作だけ</text>
+
+    <!-- PC（モニター） -->
+    <g>
+      <rect x="1130" y="450" width="280" height="180" rx="10" fill="#fff" stroke="#f59e0b" stroke-width="3"/>
+      <rect x="1146" y="466" width="248" height="148" rx="4" fill="#fef3e2"/>
+      <rect x="1230" y="630" width="80" height="20" rx="2" fill="#f59e0b"/>
+      <rect x="1180" y="650" width="180" height="10" rx="2" fill="#f59e0b"/>
+
+      <!-- ブラウザ管理画面風 -->
+      <rect x="1146" y="466" width="248" height="24" fill="#f59e0b"/>
+      <text x="1270" y="478" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="600" font-size="11" letter-spacing="1">note管理画面</text>
+      <rect x="1166" y="510" width="100" height="32" rx="4" fill="#fff" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="1216" y="526" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="11">UPLOAD</text>
+      <rect x="1278" y="510" width="100" height="32" rx="4" fill="#fff" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="1328" y="526" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="11">UPLOAD</text>
+      <line x1="1166" y1="560" x2="1378" y2="560" stroke="#fde6c1" stroke-width="2"/>
+      <line x1="1166" y1="580" x2="1340" y2="580" stroke="#fde6c1" stroke-width="2"/>
+      <line x1="1166" y1="600" x2="1378" y2="600" stroke="#fde6c1" stroke-width="2"/>
+    </g>
+
+    <!-- 残った2つの操作 -->
+    <g transform="translate(1450, 460)">
+      <rect x="0" y="0" width="320" height="80" rx="10" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+      <rect x="0" y="0" width="60" height="80" rx="10" fill="#f59e0b"/>
+      <text x="30" y="40" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="24">1</text>
+      <text x="80" y="24" fill="#1f2937" font-weight="700" font-size="20" dominant-baseline="hanging">アイキャッチ画像</text>
+      <text x="80" y="50" fill="#6b7280" font-weight="500" font-size="14" dominant-baseline="hanging">noteにアップ・設定</text>
+    </g>
+    <g transform="translate(1450, 560)">
+      <rect x="0" y="0" width="320" height="80" rx="10" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+      <rect x="0" y="0" width="60" height="80" rx="10" fill="#f59e0b"/>
+      <text x="30" y="40" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="24">2</text>
+      <text x="80" y="24" fill="#1f2937" font-weight="700" font-size="20" dominant-baseline="hanging">XMLファイル</text>
+      <text x="80" y="50" fill="#6b7280" font-weight="500" font-size="14" dominant-baseline="hanging">noteに取り込み</text>
+    </g>
+
+    <text x="1440" y="730" fill="#6b7280" font-weight="500" font-size="16" dominant-baseline="hanging">どちらもブラウザの管理画面操作</text>
+    <text x="1440" y="780" fill="#f59e0b" font-weight="700" font-size="18" dominant-baseline="hanging">この5%も埋められないか、</text>
+    <text x="1440" y="810" fill="#f59e0b" font-weight="700" font-size="18" dominant-baseline="hanging">いま検討中（考えてるのはAI）</text>
+  </g>
+
+  <!-- フッター -->
+  <g>
+    <rect x="380" y="940" width="1160" height="56" rx="28" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="414" cy="968" r="6" fill="#f59e0b"/>
+    <text x="438" y="968" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="22" letter-spacing="0.8">記事制作の本体はスマホで完結、残り5%はアップロード操作</text>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <!-- 上部 -->
+  <text x="80" y="60" fill="#5da8d4" font-weight="600" font-size="18" letter-spacing="3" dominant-baseline="hanging">中小企業のひとりDX担当が、AIで会社をアップデートする</text>
+  <line x1="80" y1="98" x2="200" y2="98" stroke="#5da8d4" stroke-width="3"/>
+  <text x="1200" y="60" text-anchor="end" fill="#f59e0b" font-weight="700" font-size="22" letter-spacing="2" dominant-baseline="hanging">#03 — WP RENEWAL ②</text>
+
+  <!-- メインタイトル -->
+  <text x="80" y="170" font-weight="700" font-size="60" dominant-baseline="hanging">
+    <tspan fill="#3a7ba8">144件</tspan><tspan fill="#1f2937">の</tspan>
+  </text>
+  <text x="80" y="248" font-weight="700" font-size="60" dominant-baseline="hanging">
+    <tspan fill="#1f2937">引っ越しを、</tspan>
+  </text>
+  <text x="80" y="326" font-weight="700" font-size="60" dominant-baseline="hanging">
+    <tspan fill="#f59e0b">手作業</tspan><tspan fill="#1f2937">で</tspan>
+  </text>
+  <text x="80" y="404" font-weight="700" font-size="60" dominant-baseline="hanging">
+    <tspan fill="#1f2937">乗り切った話</tspan>
+  </text>
+
+  <!-- 右：カードの流れ＋プログレスバー -->
+  <g transform="translate(845, 195)">
+    <!-- 並んでいるカード（移動前） -->
+    <g>
+      <rect x="0" y="0" width="56" height="76" rx="6" fill="#eaf4fb" stroke="#a8d4ee" stroke-width="2"/>
+      <line x1="10" y1="16" x2="46" y2="16" stroke="#a8d4ee" stroke-width="2" stroke-linecap="round"/>
+      <line x1="10" y1="32" x2="46" y2="32" stroke="#a8d4ee" stroke-width="2" stroke-linecap="round"/>
+      <line x1="10" y1="48" x2="38" y2="48" stroke="#a8d4ee" stroke-width="2" stroke-linecap="round"/>
+      <line x1="10" y1="64" x2="46" y2="64" stroke="#a8d4ee" stroke-width="2" stroke-linecap="round"/>
+
+      <rect x="68" y="0" width="56" height="76" rx="6" fill="#eaf4fb" stroke="#a8d4ee" stroke-width="2"/>
+      <line x1="78" y1="16" x2="114" y2="16" stroke="#a8d4ee" stroke-width="2" stroke-linecap="round"/>
+      <line x1="78" y1="32" x2="114" y2="32" stroke="#a8d4ee" stroke-width="2" stroke-linecap="round"/>
+      <line x1="78" y1="48" x2="106" y2="48" stroke="#a8d4ee" stroke-width="2" stroke-linecap="round"/>
+      <line x1="78" y1="64" x2="114" y2="64" stroke="#a8d4ee" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- 矢印 -->
+    <g stroke="#f59e0b" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="140" y1="38" x2="220" y2="38"/>
+      <polyline points="208,30 220,38 208,46"/>
+    </g>
+
+    <!-- 引っ越し済みカード -->
+    <g>
+      <rect x="236" y="0" width="56" height="76" rx="6" fill="#fef3e2" stroke="#f59e0b" stroke-width="2"/>
+      <polyline points="248,32 260,46 282,18" fill="none" stroke="#2f8a4e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <rect x="304" y="0" width="56" height="76" rx="6" fill="#fef3e2" stroke="#f59e0b" stroke-width="2"/>
+      <polyline points="316,32 328,46 350,18" fill="none" stroke="#2f8a4e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- プログレスバー -->
+    <g transform="translate(0, 130)">
+      <rect x="0" y="0" width="360" height="22" rx="11" fill="#ecf2f7"/>
+      <rect x="0" y="0" width="360" height="22" rx="11" fill="#f59e0b"/>
+      <text x="180" y="58" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="24" letter-spacing="1">144 / 144</text>
+      <text x="180" y="92" text-anchor="middle" fill="#6b7280" font-weight="600" font-size="14" letter-spacing="2">DONE</text>
+    </g>
+  </g>
+
+  <!-- フッター -->
+  <g>
+    <rect x="280" y="568" width="720" height="52" rx="26" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="312" cy="594" r="6" fill="#f59e0b"/>
+    <text x="334" y="594" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20" letter-spacing="0.5">コードを書かない自分が、ツールを書いてもらった</text>
+  </g>
+</svg>

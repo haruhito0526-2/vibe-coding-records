@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="softShadow51" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8f9fa"/>
+
+  <!-- ヘッダー -->
+  <text x="80" y="80" fill="#5da8d4" font-weight="600" font-size="22" letter-spacing="4" dominant-baseline="hanging">CHAPTER 01 — THE DREAM</text>
+  <text x="80" y="112" font-weight="700" font-size="44" dominant-baseline="hanging">
+    <tspan fill="#1f2937">投入したら、</tspan><tspan fill="#3a7ba8">画像付き記事</tspan><tspan fill="#1f2937">が出てくる──理想の仕組み</tspan>
+  </text>
+  <text x="1840" y="80" text-anchor="end" fill="#6b7280" font-weight="500" font-size="22" dominant-baseline="hanging">VOL.5 — PIPELINE ①</text>
+  <text x="1840" y="116" text-anchor="end" fill="#f59e0b" font-weight="700" font-size="32" letter-spacing="1.4" dominant-baseline="hanging">DREAM</text>
+
+  <!-- 左：入力 -->
+  <g>
+    <rect x="120" y="320" width="360" height="440" rx="14" fill="#3a7ba8" opacity="0.10" filter="url(#softShadow51)"/>
+    <rect x="120" y="314" width="360" height="440" rx="14" fill="#fff" stroke="#ecf2f7" stroke-width="1.5"/>
+    <rect x="150" y="350" width="160" height="36" rx="18" fill="#ecf2f7"/>
+    <text x="230" y="368" text-anchor="middle" dominant-baseline="central" fill="#3a7ba8" font-weight="700" font-size="18" letter-spacing="1.5">INPUT</text>
+    <text x="150" y="420" fill="#1f2937" font-weight="700" font-size="26" dominant-baseline="hanging">入れるのは、これだけ</text>
+
+    <g transform="translate(150, 480)">
+      <rect x="0" y="0" width="300" height="50" rx="6" fill="#ecf2f7" stroke="#a8d4ee" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <text x="14" y="25" dominant-baseline="central" fill="#6b7280" font-size="16">テーマ</text>
+    </g>
+    <g transform="translate(150, 545)">
+      <rect x="0" y="0" width="300" height="50" rx="6" fill="#ecf2f7" stroke="#a8d4ee" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <text x="14" y="25" dominant-baseline="central" fill="#6b7280" font-size="16">キーワード</text>
+    </g>
+    <g transform="translate(150, 610)">
+      <rect x="0" y="0" width="300" height="50" rx="6" fill="#ecf2f7" stroke="#a8d4ee" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <text x="14" y="25" dominant-baseline="central" fill="#6b7280" font-size="16">公開日</text>
+    </g>
+    <text x="150" y="700" fill="#6b7280" font-weight="500" font-size="16" dominant-baseline="hanging">考えるのは、ここだけ</text>
+  </g>
+
+  <!-- 矢印1 -->
+  <g stroke="#f59e0b" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="490" y1="540" x2="630" y2="540"/>
+    <polyline points="618,531 632,540 618,549"/>
+  </g>
+
+  <!-- 中央：マジックボックス -->
+  <g>
+    <rect x="640" y="320" width="640" height="440" rx="20" fill="#fef3e2" stroke="#f59e0b" stroke-width="3" stroke-dasharray="10 6"/>
+    <text x="960" y="370" text-anchor="middle" fill="#f59e0b" font-weight="700" font-size="22" letter-spacing="3">AUTO MAGIC</text>
+
+    <!-- 歯車 -->
+    <g transform="translate(960, 540)">
+      <g fill="#f59e0b">
+        <rect x="-9" y="-118" width="18" height="22"/>
+        <rect x="-9" y="96" width="18" height="22"/>
+        <rect x="-118" y="-9" width="22" height="18"/>
+        <rect x="96" y="-9" width="22" height="18"/>
+        <g transform="rotate(45)"><rect x="-9" y="-118" width="18" height="22"/></g>
+        <g transform="rotate(135)"><rect x="-9" y="-118" width="18" height="22"/></g>
+        <g transform="rotate(225)"><rect x="-9" y="-118" width="18" height="22"/></g>
+        <g transform="rotate(315)"><rect x="-9" y="-118" width="18" height="22"/></g>
+      </g>
+      <circle r="98" fill="#fff" stroke="#f59e0b" stroke-width="4"/>
+      <circle r="86" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.4"/>
+      <text y="0" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="60" letter-spacing="2">AI</text>
+    </g>
+    <text x="960" y="700" text-anchor="middle" fill="#1f2937" font-weight="600" font-size="20">人間は何もしなくていい</text>
+  </g>
+
+  <!-- 矢印2 -->
+  <g stroke="#f59e0b" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="1290" y1="540" x2="1430" y2="540"/>
+    <polyline points="1418,531 1432,540 1418,549"/>
+  </g>
+
+  <!-- 右：出力 -->
+  <g>
+    <rect x="1440" y="320" width="360" height="440" rx="14" fill="#f59e0b" opacity="0.12" filter="url(#softShadow51)"/>
+    <rect x="1440" y="314" width="360" height="440" rx="14" fill="#fff" stroke="#fde6c1" stroke-width="2"/>
+    <rect x="1470" y="350" width="160" height="36" rx="18" fill="#fef3e2"/>
+    <text x="1550" y="368" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="18" letter-spacing="1.5">OUTPUT</text>
+    <text x="1470" y="420" fill="#1f2937" font-weight="700" font-size="26" dominant-baseline="hanging">出てくるのは、これ</text>
+
+    <!-- 重なった記事カード -->
+    <g transform="translate(1500, 480)">
+      <g transform="rotate(-5 130 110)">
+        <rect x="0" y="0" width="260" height="220" rx="10" fill="#fef3e2" stroke="#fde6c1" stroke-width="2"/>
+      </g>
+      <g transform="rotate(3 140 100)">
+        <rect x="10" y="-10" width="260" height="220" rx="10" fill="#fff" stroke="#fde6c1" stroke-width="2"/>
+      </g>
+      <rect x="20" y="-20" width="260" height="220" rx="10" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+      <!-- 一番上カードの中身 -->
+      <rect x="40" y="0" width="220" height="90" rx="6" fill="#fef3e2"/>
+      <circle cx="220" cy="22" r="9" fill="#f59e0b"/>
+      <polyline points="50,72 80,48 110,60 150,32 200,48 250,40" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="40" y1="115" x2="260" y2="115" stroke="#a8d4ee" stroke-width="3" stroke-linecap="round"/>
+      <line x1="40" y1="135" x2="260" y2="135" stroke="#a8d4ee" stroke-width="3" stroke-linecap="round"/>
+      <line x1="40" y1="155" x2="220" y2="155" stroke="#a8d4ee" stroke-width="3" stroke-linecap="round"/>
+      <line x1="40" y1="175" x2="260" y2="175" stroke="#a8d4ee" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <text x="1620" y="720" text-anchor="middle" fill="#6b7280" font-weight="500" font-size="16">画像付きの記事が、何本でも</text>
+  </g>
+
+  <!-- フッター -->
+  <g>
+    <rect x="380" y="940" width="1160" height="56" rx="28" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="414" cy="968" r="6" fill="#f59e0b"/>
+    <text x="438" y="968" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="22" letter-spacing="0.8">「画像付きブログを全自動で」これが最初の理想だった</text>
+  </g>
+</svg>

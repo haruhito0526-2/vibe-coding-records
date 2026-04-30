@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <!-- 上部 -->
+  <text x="80" y="60" fill="#5da8d4" font-weight="600" font-size="18" letter-spacing="3" dominant-baseline="hanging">中小企業のひとりDX担当が、AIで会社をアップデートする</text>
+  <line x1="80" y1="98" x2="200" y2="98" stroke="#5da8d4" stroke-width="3"/>
+  <text x="1200" y="60" text-anchor="end" fill="#f59e0b" font-weight="700" font-size="22" letter-spacing="2" dominant-baseline="hanging">#02 — WP RENEWAL ①</text>
+
+  <!-- メインタイトル -->
+  <text x="80" y="170" font-weight="700" font-size="56" dominant-baseline="hanging">
+    <tspan fill="#1f2937">壊れた</tspan><tspan fill="#3a7ba8">Webサイト</tspan><tspan fill="#1f2937">を、</tspan>
+  </text>
+  <text x="80" y="246" font-weight="700" font-size="56" dominant-baseline="hanging">
+    <tspan fill="#1f2937">外注せずに、</tspan>
+  </text>
+  <text x="80" y="322" font-weight="700" font-size="56" dominant-baseline="hanging">
+    <tspan fill="#1f2937">自分で</tspan><tspan fill="#f59e0b">テーマから</tspan>
+  </text>
+  <text x="80" y="398" font-weight="700" font-size="56" dominant-baseline="hanging">
+    <tspan fill="#1f2937">書き直す</tspan>
+  </text>
+
+  <!-- 右：壊れた画面 → 自作テーマ -->
+  <g transform="translate(875, 200)">
+    <!-- 壊れた画面 -->
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="160" height="200" rx="10" fill="#eaf4fb" stroke="#a8d4ee" stroke-width="2"/>
+      <line x1="22" y1="40" x2="138" y2="40" stroke="#a8d4ee" stroke-width="3" stroke-linecap="round"/>
+      <line x1="22" y1="68" x2="138" y2="68" stroke="#a8d4ee" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 4"/>
+      <line x1="22" y1="96" x2="118" y2="96" stroke="#a8d4ee" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 4"/>
+      <line x1="22" y1="124" x2="138" y2="124" stroke="#a8d4ee" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 4"/>
+      <line x1="22" y1="152" x2="98" y2="152" stroke="#a8d4ee" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 4"/>
+      <line x1="32" y1="22" x2="128" y2="178" stroke="#b8413c" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+      <line x1="128" y1="22" x2="32" y2="178" stroke="#b8413c" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+    </g>
+
+    <!-- 矢印 -->
+    <g stroke="#f59e0b" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="180" y1="135" x2="225" y2="135"/>
+      <polyline points="215,127 225,135 215,143"/>
+    </g>
+
+    <!-- 自作テーマファイル -->
+    <g transform="translate(245, 30)">
+      <rect x="0" y="0" width="160" height="200" rx="10" fill="#fef3e2" stroke="#f59e0b" stroke-width="2"/>
+      <rect x="0" y="0" width="80" height="28" fill="#f59e0b"/>
+      <text x="40" y="14" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="12" letter-spacing="0.5">theme.php</text>
+      <text x="20" y="58" fill="#3a7ba8" font-weight="700" font-size="14">&lt;?php</text>
+      <text x="20" y="80" fill="#1f2937" font-weight="500" font-size="13">  function</text>
+      <text x="20" y="102" fill="#1f2937" font-weight="500" font-size="13">  &lt;header&gt;</text>
+      <text x="20" y="124" fill="#1f2937" font-weight="500" font-size="13">  &lt;main&gt;</text>
+      <text x="20" y="146" fill="#1f2937" font-weight="500" font-size="13">  &lt;footer&gt;</text>
+      <text x="20" y="172" fill="#3a7ba8" font-weight="700" font-size="14">?&gt;</text>
+      <polyline points="115,75 130,95 150,55" fill="none" stroke="#2f8a4e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- フッター -->
+  <g>
+    <rect x="280" y="568" width="720" height="52" rx="26" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="312" cy="594" r="6" fill="#f59e0b"/>
+    <text x="334" y="594" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20" letter-spacing="0.5">外注見積もり400万、自作で乗り切る</text>
+  </g>
+</svg>
