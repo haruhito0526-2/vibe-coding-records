@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="softShadow46" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8f9fa"/>
+
+  <!-- ヘッダー -->
+  <text x="80" y="80" fill="#5da8d4" font-weight="600" font-size="22" letter-spacing="4" dominant-baseline="hanging">BEFORE / AFTER</text>
+  <text x="80" y="112" font-weight="700" font-size="44" dominant-baseline="hanging">
+    <tspan fill="#1f2937">中継だらけの動線を、</tspan><tspan fill="#f59e0b">1回の送信</tspan><tspan fill="#1f2937">に畳んだ</tspan>
+  </text>
+  <text x="1840" y="80" text-anchor="end" fill="#6b7280" font-weight="500" font-size="22" dominant-baseline="hanging">CH.5 — RESULT</text>
+  <text x="1840" y="116" text-anchor="end" fill="#f59e0b" font-weight="700" font-size="32" letter-spacing="1.4" dominant-baseline="hanging">DONE</text>
+
+  <!-- BEFOREカード -->
+  <g>
+    <rect x="80" y="240" width="800" height="660" rx="14" fill="#3a7ba8" opacity="0.10" filter="url(#softShadow46)"/>
+    <rect x="80" y="234" width="800" height="660" rx="14" fill="#ffffff" stroke="#ecf2f7" stroke-width="1.5"/>
+
+    <rect x="110" y="270" width="160" height="36" rx="18" fill="#ecf2f7"/>
+    <text x="190" y="288" text-anchor="middle" dominant-baseline="central" fill="#3a7ba8" font-weight="700" font-size="18" letter-spacing="1.5">BEFORE</text>
+
+    <text x="110" y="340" fill="#1f2937" font-weight="700" font-size="36" dominant-baseline="hanging">中継だらけの動線</text>
+    <text x="110" y="394" fill="#6b7280" font-weight="500" font-size="22" dominant-baseline="hanging">3〜4回バトンを渡してやっとスプシに着く</text>
+
+    <!-- 縦に並んだバトンリレー -->
+    <g transform="translate(160, 470)">
+      <!-- 1: フォーム -->
+      <rect x="0" y="0" width="180" height="48" rx="8" fill="#ecf2f7" stroke="#a8d4ee" stroke-width="1.5"/>
+      <text x="90" y="24" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="16">フォーム送信</text>
+
+      <!-- 矢印 -->
+      <g stroke="#5da8d4" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="90" y1="48" x2="90" y2="68"/>
+        <polyline points="83,58 90,70 97,58"/>
+      </g>
+
+      <!-- 2: 通知メール -->
+      <rect x="0" y="76" width="180" height="48" rx="8" fill="#ecf2f7" stroke="#a8d4ee" stroke-width="1.5"/>
+      <text x="90" y="100" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="16">通知メール</text>
+
+      <g stroke="#5da8d4" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="90" y1="124" x2="90" y2="144"/>
+        <polyline points="83,134 90,146 97,134"/>
+      </g>
+
+      <!-- 3: 自動処理 -->
+      <rect x="0" y="152" width="180" height="48" rx="8" fill="#ecf2f7" stroke="#a8d4ee" stroke-width="1.5"/>
+      <text x="90" y="176" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="16">自動処理が読む</text>
+
+      <g stroke="#5da8d4" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="90" y1="200" x2="90" y2="220"/>
+        <polyline points="83,210 90,222 97,210"/>
+      </g>
+
+      <!-- 4: スプシ -->
+      <rect x="0" y="228" width="180" height="48" rx="8" fill="#ecf2f7" stroke="#a8d4ee" stroke-width="1.5"/>
+      <text x="90" y="252" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="16">スプレッドシート</text>
+
+      <g stroke="#b8413c" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="90" y1="276" x2="90" y2="296"/>
+        <polyline points="83,286 90,298 97,286"/>
+      </g>
+
+      <!-- 5: 人間が手で（赤強調） -->
+      <rect x="0" y="304" width="180" height="48" rx="8" fill="#fae5e3" stroke="#b8413c" stroke-width="2"/>
+      <text x="90" y="328" text-anchor="middle" dominant-baseline="central" fill="#b8413c" font-weight="700" font-size="16">人間が手で</text>
+
+      <g stroke="#b8413c" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="90" y1="352" x2="90" y2="372"/>
+        <polyline points="83,362 90,374 97,362"/>
+      </g>
+
+      <!-- 6: メルマガサービス -->
+      <rect x="0" y="380" width="180" height="48" rx="8" fill="#ecf2f7" stroke="#a8d4ee" stroke-width="1.5"/>
+      <text x="90" y="404" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="16">メルマガに登録</text>
+
+      <!-- 説明 -->
+      <g transform="translate(220, 100)">
+        <text x="0" y="0" fill="#3a7ba8" font-weight="700" font-size="16" letter-spacing="1.4" dominant-baseline="hanging">BATONS</text>
+        <text x="0" y="30" fill="#1f2937" font-weight="700" font-size="38" dominant-baseline="hanging">3〜4回</text>
+        <text x="0" y="80" fill="#6b7280" font-weight="500" font-size="16" dominant-baseline="hanging">バトンを渡しては受ける</text>
+        <text x="0" y="105" fill="#6b7280" font-weight="500" font-size="16" dominant-baseline="hanging">最後は人間が手で登録</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 中央矢印 -->
+  <g>
+    <circle cx="960" cy="600" r="80" fill="#ffffff" stroke="#f59e0b" stroke-width="3"/>
+    <text x="960" y="582" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="20" letter-spacing="1.4">AI BRIDGE</text>
+    <text x="960" y="615" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="14">橋を架けた</text>
+
+    <g stroke="#f59e0b" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="900" y1="600" x2="884" y2="600"/>
+      <polyline points="894,594 884,600 894,606"/>
+      <line x1="1020" y1="600" x2="1036" y2="600"/>
+      <polyline points="1026,594 1036,600 1026,606"/>
+    </g>
+  </g>
+
+  <!-- AFTERカード -->
+  <g>
+    <rect x="1040" y="240" width="800" height="660" rx="14" fill="#f59e0b" opacity="0.12" filter="url(#softShadow46)"/>
+    <rect x="1040" y="234" width="800" height="660" rx="14" fill="#ffffff" stroke="#fde6c1" stroke-width="2"/>
+
+    <rect x="1070" y="270" width="160" height="36" rx="18" fill="#fef3e2"/>
+    <text x="1150" y="288" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="18" letter-spacing="1.5">AFTER</text>
+
+    <text x="1070" y="340" fill="#1f2937" font-weight="700" font-size="36" dominant-baseline="hanging">1回の送信に畳む</text>
+    <text x="1070" y="394" fill="#6b7280" font-weight="500" font-size="22" dominant-baseline="hanging">送信1回で、5つの処理が同時に走る</text>
+
+    <!-- フォーム -->
+    <g transform="translate(1110, 480)">
+      <rect x="0" y="0" width="180" height="60" rx="10" fill="#fef3e2" stroke="#f59e0b" stroke-width="2.5"/>
+      <text x="90" y="30" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="18">フォーム送信</text>
+      <text x="90" y="78" text-anchor="middle" fill="#f59e0b" font-weight="700" font-size="16" dominant-baseline="hanging">SEND ONCE</text>
+    </g>
+
+    <!-- 放射状に5つの処理 -->
+    <g stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+      <line x1="1300" y1="490" x2="1410" y2="450"/>
+      <polyline points="1396,446 1412,450 1402,460"/>
+      <line x1="1300" y1="500" x2="1410" y2="500"/>
+      <polyline points="1400,494 1412,500 1400,506"/>
+      <line x1="1300" y1="510" x2="1410" y2="550"/>
+      <polyline points="1402,541 1412,550 1396,553"/>
+      <line x1="1300" y1="520" x2="1410" y2="610"/>
+      <polyline points="1402,602 1412,610 1396,613"/>
+      <line x1="1300" y1="530" x2="1410" y2="680"/>
+      <polyline points="1402,670 1412,680 1396,684"/>
+    </g>
+
+    <!-- 5つの処理 -->
+    <g transform="translate(1410, 420)">
+      <rect x="0" y="0" width="380" height="50" rx="8" fill="#ffffff" stroke="#fde6c1" stroke-width="2"/>
+      <text x="20" y="25" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="16">管理者にメール通知</text>
+    </g>
+    <g transform="translate(1410, 478)">
+      <rect x="0" y="0" width="380" height="50" rx="8" fill="#ffffff" stroke="#fde6c1" stroke-width="2"/>
+      <text x="20" y="25" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="16">送信者に自動返信メール</text>
+    </g>
+    <g transform="translate(1410, 536)">
+      <rect x="0" y="0" width="380" height="50" rx="8" fill="#ffffff" stroke="#fde6c1" stroke-width="2"/>
+      <text x="20" y="25" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="16">サンクスページへ移動</text>
+    </g>
+    <g transform="translate(1410, 594)">
+      <rect x="0" y="0" width="380" height="50" rx="8" fill="#fef3e2" stroke="#f59e0b" stroke-width="2.5"/>
+      <text x="20" y="25" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="16">メルマガに登録（チェックON時のみ）</text>
+    </g>
+    <g transform="translate(1410, 652)">
+      <rect x="0" y="0" width="380" height="50" rx="8" fill="#ffffff" stroke="#fde6c1" stroke-width="2"/>
+      <text x="20" y="25" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="16">スプレッドシートに記録</text>
+    </g>
+
+    <!-- スタッツ -->
+    <g transform="translate(1070, 750)">
+      <rect x="0" y="0" width="740" height="120" rx="10" fill="#fef3e2"/>
+      <text x="30" y="22" fill="#f59e0b" font-weight="700" font-size="16" letter-spacing="1.4" dominant-baseline="hanging">RESULT</text>
+      <text x="30" y="56" fill="#1f2937" font-weight="700" font-size="30" dominant-baseline="hanging">送信 1回 → 5つの処理が同時に走る</text>
+      <text x="30" y="98" fill="#6b7280" font-weight="500" font-size="16" dominant-baseline="hanging">人間の手作業ゼロ。チェックボックス1個で挙動を切り替えられる</text>
+    </g>
+  </g>
+
+  <!-- フッター -->
+  <g>
+    <rect x="320" y="940" width="1280" height="56" rx="28" fill="#ffffff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="354" cy="968" r="6" fill="#f59e0b"/>
+    <text x="378" y="968" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="22" letter-spacing="0.8">AIにシステムとシステムをつなぐ橋を作らせる</text>
+  </g>
+</svg>
