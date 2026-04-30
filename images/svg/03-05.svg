@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="softShadow35" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8f9fa"/>
+
+  <!-- ヘッダー -->
+  <text x="80" y="80" fill="#5da8d4" font-weight="600" font-size="22" letter-spacing="4" dominant-baseline="hanging">TWO WHEELS</text>
+  <text x="80" y="112" font-weight="700" font-size="44" dominant-baseline="hanging">
+    <tspan fill="#3a7ba8">AIで作った仕組み</tspan><tspan fill="#1f2937"> × </tspan><tspan fill="#f59e0b">人間の確認</tspan><tspan fill="#1f2937"> = 144件が回る</tspan>
+  </text>
+  <text x="1840" y="80" text-anchor="end" fill="#6b7280" font-weight="500" font-size="22" dominant-baseline="hanging">LEARNINGS</text>
+  <text x="1840" y="116" text-anchor="end" fill="#3a7ba8" font-weight="700" font-size="32" letter-spacing="1.4" dominant-baseline="hanging">2 DAYS / 144</text>
+
+  <!-- 左サークル：ツール化 -->
+  <g>
+    <circle cx="640" cy="600" r="320" fill="#3a7ba8" opacity="0.10" filter="url(#softShadow35)"/>
+    <circle cx="640" cy="600" r="310" fill="#ffffff" stroke="#a8d4ee" stroke-width="3"/>
+  </g>
+
+  <!-- 右サークル：確認 -->
+  <g>
+    <circle cx="1280" cy="600" r="320" fill="#f59e0b" opacity="0.10" filter="url(#softShadow35)"/>
+    <circle cx="1280" cy="600" r="310" fill="#ffffff" stroke="#fcd590" stroke-width="3"/>
+  </g>
+
+  <!-- 重なり部分の薄い色（左右の円が交差するエリア） -->
+  <g opacity="0.6">
+    <path d="M 960 320 A 310 310 0 0 1 960 880 A 310 310 0 0 1 960 320 Z" fill="#fff7e6" stroke="none"/>
+  </g>
+
+  <!-- 左サークル：内容 -->
+  <g>
+    <rect x="430" y="358" width="200" height="36" rx="18" fill="#ecf2f7"/>
+    <text x="530" y="376" text-anchor="middle" dominant-baseline="central" fill="#3a7ba8" font-weight="700" font-size="18" letter-spacing="1.2">TOOLS</text>
+    <text x="530" y="412" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="32" dominant-baseline="hanging">AIで作った仕組み</text>
+    <rect x="510" y="464" width="40" height="2" rx="1" fill="#3a7ba8"/>
+
+    <!-- 項目リスト -->
+    <g transform="translate(380, 500)">
+      <g>
+        <circle cx="0" cy="14" r="6" fill="#5da8d4"/>
+        <text x="20" y="14" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20">変換ツール</text>
+        <text x="20" y="40" dominant-baseline="central" fill="#6b7280" font-weight="500" font-size="16">2時間で作って、1時間ちょっとで144件流す</text>
+      </g>
+      <g transform="translate(0, 80)">
+        <circle cx="0" cy="14" r="6" fill="#5da8d4"/>
+        <text x="20" y="14" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20">一括書き換え (522件)</text>
+        <text x="20" y="40" dominant-baseline="central" fill="#6b7280" font-weight="500" font-size="16">画像URLを「文字列の置換」で一気に</text>
+      </g>
+      <g transform="translate(0, 160)">
+        <circle cx="0" cy="14" r="6" fill="#5da8d4"/>
+        <text x="20" y="14" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20">HTMLの構造を整える</text>
+        <text x="20" y="40" dominant-baseline="central" fill="#6b7280" font-weight="500" font-size="16">テーブル・見出し・ボタンを新フォーマットに</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 右サークル：内容 -->
+  <g>
+    <rect x="1180" y="358" width="200" height="36" rx="18" fill="#fef3e2"/>
+    <text x="1280" y="376" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="18" letter-spacing="1.2">HUMAN CHECK</text>
+    <text x="1280" y="412" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="32" dominant-baseline="hanging">人間の確認</text>
+    <rect x="1260" y="464" width="40" height="2" rx="1" fill="#f59e0b"/>
+
+    <!-- 項目リスト -->
+    <g transform="translate(1320, 500)">
+      <g>
+        <circle cx="0" cy="14" r="6" fill="#f59e0b"/>
+        <text x="20" y="14" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20">ローカルで動かす</text>
+        <text x="20" y="40" dominant-baseline="central" fill="#6b7280" font-weight="500" font-size="16">本番に上げる前に、自分のPCで触る</text>
+      </g>
+      <g transform="translate(0, 80)">
+        <circle cx="0" cy="14" r="6" fill="#f59e0b"/>
+        <text x="20" y="14" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20">目で見る</text>
+        <text x="20" y="40" dominant-baseline="central" fill="#6b7280" font-weight="500" font-size="16">画面の崩れ・違和感をひとつずつ確認</text>
+      </g>
+      <g transform="translate(0, 160)">
+        <circle cx="0" cy="14" r="6" fill="#f59e0b"/>
+        <text x="20" y="14" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20">エラーを観察する</text>
+        <text x="20" y="40" dominant-baseline="central" fill="#6b7280" font-weight="500" font-size="16">指示してない穴は、エラーで初めて見える</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 中央：重なりラベル -->
+  <g>
+    <rect x="860" y="560" width="200" height="80" rx="40" fill="#ffffff" stroke="#f59e0b" stroke-width="3"/>
+    <text x="960" y="590" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="22">144件が</text>
+    <text x="960" y="620" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="22">回る</text>
+  </g>
+
+  <!-- 下部：内訳タイムライン -->
+  <g>
+    <rect x="180" y="970" width="1560" height="56" rx="14" fill="#ffffff" stroke="#d8e7f2" stroke-width="1.5"/>
+    <text x="220" y="998" dominant-baseline="central" fill="#3a7ba8" font-weight="700" font-size="16" letter-spacing="1.2">TIMELINE / 2 DAYS</text>
+    <text x="430" y="998" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="17">2時間：ツール作成</text>
+    <text x="630" y="998" dominant-baseline="central" fill="#6b7280" font-weight="500" font-size="16">→</text>
+    <text x="660" y="998" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="17">1時間ちょっと：144件を流す</text>
+    <text x="940" y="998" dominant-baseline="central" fill="#6b7280" font-weight="500" font-size="16">→</text>
+    <text x="970" y="998" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="17">画像URL 522件を一括置換</text>
+    <text x="1280" y="998" dominant-baseline="central" fill="#6b7280" font-weight="500" font-size="16">→</text>
+    <text x="1310" y="998" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="17">最後にローカルで目視確認</text>
+  </g>
+</svg>
