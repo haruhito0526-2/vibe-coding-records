@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <text x="80" y="60" fill="#1f2937" font-weight="700" font-size="28" dominant-baseline="hanging">公式ルートが詰まって、AIに横道を見つけてもらった</text>
+  <line x1="80" y1="105" x2="200" y2="105" stroke="#f59e0b" stroke-width="3"/>
+
+  <!-- AIエージェント（中央上）：ロボット顔 -->
+  <g transform="translate(520, 140)">
+    <rect x="0" y="0" width="240" height="80" rx="14" fill="#fef3e2" stroke="#f59e0b" stroke-width="2.5"/>
+    <line x1="120" y1="0" x2="120" y2="-12" stroke="#f59e0b" stroke-width="2.5"/>
+    <circle cx="120" cy="-15" r="4" fill="#f59e0b"/>
+    <circle cx="40" cy="40" r="5" fill="#3a7ba8"/>
+    <circle cx="58" cy="40" r="5" fill="#3a7ba8"/>
+    <text x="160" y="44" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="20">AIエージェント</text>
+  </g>
+
+  <line x1="640" y1="220" x2="640" y2="250" stroke="#3a7ba8" stroke-width="2"/>
+
+  <!-- 経路A：公式GA4 MCP（× グレー） -->
+  <g>
+    <path d="M 640,250 L 200,300" fill="none" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 4"/>
+    <g transform="translate(40, 290)">
+      <rect x="0" y="0" width="320" height="65" rx="14" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <g transform="translate(38, 32)">
+        <circle cx="0" cy="0" r="14" fill="none" stroke="#9ca3af" stroke-width="2.5"/>
+        <circle cx="0" cy="0" r="5" fill="#9ca3af"/>
+        <line x1="0" y1="-20" x2="0" y2="-14" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="0" y1="14" x2="0" y2="20" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-20" y1="0" x2="-14" y2="0" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="14" y1="0" x2="20" y2="0" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-14" y1="-14" x2="-10" y2="-10" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="14" y1="14" x2="10" y2="10" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-14" y1="14" x2="-10" y2="10" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="14" y1="-14" x2="10" y2="-10" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <text x="180" y="32" text-anchor="middle" dominant-baseline="central" fill="#6b7280" font-weight="600" font-size="15">公式 GA4 MCPサーバー</text>
+    </g>
+    <line x1="200" y1="355" x2="200" y2="395" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 4"/>
+    <g transform="translate(200, 425)">
+      <circle cx="0" cy="0" r="32" fill="#fff" stroke="#9ca3af" stroke-width="2.5"/>
+      <line x1="-16" y1="-16" x2="16" y2="16" stroke="#9ca3af" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-16" y1="16" x2="16" y2="-16" stroke="#9ca3af" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <text x="200" y="485" text-anchor="middle" fill="#6b7280" font-weight="600" font-size="14">数分待っても返らない</text>
+  </g>
+
+  <!-- 経路B：Python直接 → GA4 -->
+  <g>
+    <line x1="640" y1="250" x2="640" y2="290" stroke="#3a7ba8" stroke-width="2.5"/>
+    <g transform="translate(480, 290)">
+      <rect x="0" y="0" width="320" height="65" rx="14" fill="#fff" stroke="#3a7ba8" stroke-width="2.5"/>
+      <g transform="translate(38, 32)">
+        <text x="0" y="0" text-anchor="middle" dominant-baseline="central" fill="#3a7ba8" font-weight="700" font-size="26">{ }</text>
+      </g>
+      <text x="180" y="32" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="15">Python 直接呼び出し</text>
+    </g>
+    <line x1="640" y1="355" x2="640" y2="395" stroke="#3a7ba8" stroke-width="2.5"/>
+    <polygon points="640,395 633,383 647,383" fill="#3a7ba8"/>
+    <g transform="translate(540, 405)">
+      <rect x="0" y="0" width="200" height="65" rx="14" fill="#fef3e2" stroke="#f59e0b" stroke-width="2.5"/>
+      <g transform="translate(35, 32)">
+        <line x1="-18" y1="0" x2="18" y2="0" stroke="#3a7ba8" stroke-width="1.5"/>
+        <rect x="-15" y="-8" width="6" height="8" fill="#a8d4ee"/>
+        <rect x="-7" y="-14" width="6" height="14" fill="#a8d4ee"/>
+        <rect x="1" y="-18" width="6" height="18" fill="#f59e0b"/>
+        <rect x="9" y="-12" width="6" height="12" fill="#a8d4ee"/>
+      </g>
+      <text x="125" y="32" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="22">GA4</text>
+    </g>
+    <text x="640" y="490" text-anchor="middle" fill="#3a7ba8" font-weight="600" font-size="14">1〜2秒で返る</text>
+  </g>
+
+  <!-- 経路C：MCP gsc → Search Console -->
+  <g>
+    <path d="M 640,250 L 1080,300" fill="none" stroke="#3a7ba8" stroke-width="2.5"/>
+    <g transform="translate(920, 290)">
+      <rect x="0" y="0" width="320" height="65" rx="14" fill="#fff" stroke="#3a7ba8" stroke-width="2.5"/>
+      <g transform="translate(38, 32)">
+        <circle cx="0" cy="0" r="14" fill="none" stroke="#3a7ba8" stroke-width="2.5"/>
+        <circle cx="0" cy="0" r="5" fill="#3a7ba8"/>
+        <line x1="0" y1="-20" x2="0" y2="-14" stroke="#3a7ba8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="0" y1="14" x2="0" y2="20" stroke="#3a7ba8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-20" y1="0" x2="-14" y2="0" stroke="#3a7ba8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="14" y1="0" x2="20" y2="0" stroke="#3a7ba8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-14" y1="-14" x2="-10" y2="-10" stroke="#3a7ba8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="14" y1="14" x2="10" y2="10" stroke="#3a7ba8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-14" y1="14" x2="-10" y2="10" stroke="#3a7ba8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="14" y1="-14" x2="10" y2="-10" stroke="#3a7ba8" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <text x="180" y="32" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="15">MCPサーバー（gsc）</text>
+    </g>
+    <line x1="1080" y1="355" x2="1080" y2="395" stroke="#3a7ba8" stroke-width="2.5"/>
+    <polygon points="1080,395 1073,383 1087,383" fill="#3a7ba8"/>
+    <g transform="translate(940, 405)">
+      <rect x="0" y="0" width="280" height="65" rx="14" fill="#fef3e2" stroke="#f59e0b" stroke-width="2.5"/>
+      <g transform="translate(35, 32)">
+        <circle cx="0" cy="0" r="11" fill="none" stroke="#3a7ba8" stroke-width="2.5"/>
+        <line x1="8" y1="8" x2="16" y2="16" stroke="#3a7ba8" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <text x="160" y="32" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="18">Search Console</text>
+    </g>
+    <text x="1080" y="490" text-anchor="middle" fill="#3a7ba8" font-weight="600" font-size="14">素直に動く</text>
+  </g>
+
+  <!-- フッターキャッチ -->
+  <g>
+    <rect x="240" y="568" width="800" height="52" rx="26" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="272" cy="594" r="6" fill="#f59e0b"/>
+    <text x="294" y="594" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20" letter-spacing="0.5">正面が詰まったら、AIが横道を見つけてくる</text>
+  </g>
+</svg>

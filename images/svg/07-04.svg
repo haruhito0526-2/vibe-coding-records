@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <text x="80" y="60" fill="#1f2937" font-weight="700" font-size="28" dominant-baseline="hanging">ざっくり頼んでも、ちゃんと返してくれる</text>
+  <line x1="80" y1="105" x2="200" y2="105" stroke="#f59e0b" stroke-width="3"/>
+
+  <!-- 左：ざっくり質問 -->
+  <text x="80" y="150" fill="#6b7280" font-weight="700" font-size="14" letter-spacing="2" dominant-baseline="hanging">ざっくり質問</text>
+
+  <g transform="translate(80, 180)">
+    <rect x="0" y="0" width="320" height="80" rx="14" fill="#fff" stroke="#3a7ba8" stroke-width="2.5"/>
+    <g transform="translate(40, 40)">
+      <rect x="-20" y="-14" width="40" height="24" rx="6" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="2"/>
+      <polygon points="-10,10 0,10 -6,18" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="-8" cy="-2" r="2" fill="#3a7ba8"/>
+      <circle cx="0" cy="-2" r="2" fill="#3a7ba8"/>
+      <circle cx="8" cy="-2" r="2" fill="#3a7ba8"/>
+    </g>
+    <text x="100" y="42" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="17">「アクセスを増やしたい」</text>
+  </g>
+
+  <g transform="translate(80, 280)">
+    <rect x="0" y="0" width="320" height="80" rx="14" fill="#fff" stroke="#3a7ba8" stroke-width="2.5"/>
+    <g transform="translate(40, 40)">
+      <rect x="-20" y="-14" width="40" height="24" rx="6" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="2"/>
+      <polygon points="-10,10 0,10 -6,18" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="-8" cy="-2" r="2" fill="#3a7ba8"/>
+      <circle cx="0" cy="-2" r="2" fill="#3a7ba8"/>
+      <circle cx="8" cy="-2" r="2" fill="#3a7ba8"/>
+    </g>
+    <text x="100" y="42" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="17">「問い合わせを増やしたい」</text>
+  </g>
+
+  <!-- 中央：AIエージェント -->
+  <g transform="translate(490, 230)">
+    <rect x="0" y="0" width="160" height="100" rx="20" fill="#fef3e2" stroke="#f59e0b" stroke-width="3"/>
+    <line x1="80" y1="0" x2="80" y2="-12" stroke="#f59e0b" stroke-width="2.5"/>
+    <circle cx="80" cy="-15" r="4" fill="#f59e0b"/>
+    <circle cx="58" cy="40" r="7" fill="#3a7ba8"/>
+    <circle cx="102" cy="40" r="7" fill="#3a7ba8"/>
+    <path d="M 64,72 Q 80,82 96,72" fill="none" stroke="#3a7ba8" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="570" y="345" text-anchor="middle" fill="#6b7280" font-weight="600" font-size="13">AIエージェント</text>
+
+  <line x1="410" y1="270" x2="478" y2="270" stroke="#3a7ba8" stroke-width="2.5"/>
+  <polygon points="478,270 470,265 470,275" fill="#3a7ba8"/>
+
+  <line x1="660" y1="270" x2="728" y2="270" stroke="#3a7ba8" stroke-width="2.5"/>
+  <polygon points="728,270 720,265 720,275" fill="#3a7ba8"/>
+
+  <!-- 右：優先順位付きアクションプラン -->
+  <text x="740" y="150" fill="#f59e0b" font-weight="700" font-size="14" letter-spacing="2" dominant-baseline="hanging">優先順位つきアクションプラン</text>
+
+  <g transform="translate(740, 180)">
+    <rect x="0" y="0" width="460" height="220" rx="14" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+    <g transform="translate(20, 38)">
+      <circle cx="0" cy="0" r="14" fill="#f59e0b"/>
+      <text x="0" y="0" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="14">1</text>
+    </g>
+    <text x="44" y="32" dominant-baseline="hanging" fill="#1f2937" font-weight="700" font-size="14">クリック率が低いページの紹介文書き直し</text>
+    <text x="44" y="54" dominant-baseline="hanging" fill="#6b7280" font-size="12">→ いちばん効率がいい</text>
+    <line x1="20" y1="82" x2="440" y2="82" stroke="#fde6c1"/>
+    <g transform="translate(20, 110)">
+      <circle cx="0" cy="0" r="14" fill="#f59e0b"/>
+      <text x="0" y="0" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="14">2</text>
+    </g>
+    <text x="44" y="104" dominant-baseline="hanging" fill="#1f2937" font-weight="700" font-size="14">次に進まれていない記事の導線見直し</text>
+    <text x="44" y="126" dominant-baseline="hanging" fill="#6b7280" font-size="12">→ 滞在を伸ばせる</text>
+    <line x1="20" y1="154" x2="440" y2="154" stroke="#fde6c1"/>
+    <g transform="translate(20, 182)">
+      <circle cx="0" cy="0" r="14" fill="#f59e0b"/>
+      <text x="0" y="0" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="14">3</text>
+    </g>
+    <text x="44" y="176" dominant-baseline="hanging" fill="#1f2937" font-weight="700" font-size="14">伸びているテーマの関連記事追加</text>
+    <text x="44" y="198" dominant-baseline="hanging" fill="#6b7280" font-size="12">→ そのまま波に乗れる</text>
+  </g>
+
+  <!-- 下部：4ステップのループ図（PDCA風） -->
+  <g transform="translate(640, 480)">
+    <!-- 上：質問 -->
+    <g transform="translate(0, -60)">
+      <circle cx="0" cy="0" r="32" fill="#fef3e2" stroke="#f59e0b" stroke-width="2"/>
+      <rect x="-12" y="-8" width="24" height="14" rx="3" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="1.5"/>
+      <polygon points="-6,6 0,6 -3,11" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="1.5" stroke-linejoin="round"/>
+      <text x="0" y="50" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="13">聞く</text>
+    </g>
+    <!-- 右：提案 -->
+    <g transform="translate(120, 0)">
+      <circle cx="0" cy="0" r="32" fill="#fef3e2" stroke="#f59e0b" stroke-width="2"/>
+      <rect x="-12" y="-10" width="20" height="3" fill="#3a7ba8"/>
+      <rect x="-12" y="-3" width="20" height="3" fill="#3a7ba8"/>
+      <rect x="-12" y="4" width="14" height="3" fill="#3a7ba8"/>
+      <text x="0" y="50" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="13">提案</text>
+    </g>
+    <!-- 下：試す -->
+    <g transform="translate(0, 60)">
+      <circle cx="0" cy="0" r="32" fill="#fef3e2" stroke="#f59e0b" stroke-width="2"/>
+      <path d="M -10,2 L -2,10 L 12,-6" fill="none" stroke="#3a7ba8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="0" y="-50" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="13">試す</text>
+    </g>
+    <!-- 左：数字 -->
+    <g transform="translate(-120, 0)">
+      <circle cx="0" cy="0" r="32" fill="#fef3e2" stroke="#f59e0b" stroke-width="2"/>
+      <rect x="-12" y="0" width="6" height="10" fill="#a8d4ee"/>
+      <rect x="-4" y="-6" width="6" height="16" fill="#a8d4ee"/>
+      <rect x="4" y="-12" width="6" height="22" fill="#f59e0b"/>
+      <text x="0" y="50" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="13">数字</text>
+    </g>
+    <!-- 矢印（時計回り） -->
+    <path d="M 32,-50 A 60,60 0 0,1 88,-25" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <polygon points="88,-25 84,-32 92,-30" fill="#f59e0b"/>
+    <path d="M 88,25 A 60,60 0 0,1 32,50" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <polygon points="32,50 36,42 28,44" fill="#f59e0b"/>
+    <path d="M -32,50 A 60,60 0 0,1 -88,25" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <polygon points="-88,25 -84,32 -92,30" fill="#f59e0b"/>
+    <path d="M -88,-25 A 60,60 0 0,1 -32,-50" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <polygon points="-32,-50 -36,-42 -28,-44" fill="#f59e0b"/>
+  </g>
+
+  <!-- フッターキャッチ -->
+  <g>
+    <rect x="240" y="600" width="800" height="52" rx="26" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="272" cy="626" r="6" fill="#f59e0b"/>
+    <text x="294" y="626" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20" letter-spacing="0.5">読む・提案する・実行する。AIにまとめて渡せる</text>
+  </g>
+</svg>

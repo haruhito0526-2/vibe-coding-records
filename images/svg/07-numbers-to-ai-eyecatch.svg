@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <!-- 上部 -->
+  <text x="80" y="60" fill="#5da8d4" font-weight="600" font-size="18" letter-spacing="3" dominant-baseline="hanging">中小企業のひとりDX担当が、AIで会社をアップデートする</text>
+  <line x1="80" y1="98" x2="200" y2="98" stroke="#5da8d4" stroke-width="3"/>
+  <text x="1200" y="60" text-anchor="end" fill="#f59e0b" font-weight="700" font-size="22" letter-spacing="2" dominant-baseline="hanging">#07 — TOOLS ①</text>
+
+  <!-- メインタイトル -->
+  <text x="80" y="170" font-weight="700" font-size="52" dominant-baseline="hanging">
+    <tspan fill="#1f2937">Webマーケターを</tspan>
+  </text>
+  <text x="80" y="240" font-weight="700" font-size="52" dominant-baseline="hanging">
+    <tspan fill="#1f2937">置けない会社が、</tspan>
+  </text>
+  <text x="80" y="310" font-weight="700" font-size="52" dominant-baseline="hanging">
+    <tspan fill="#1f2937">AIに</tspan><tspan fill="#f59e0b">数字</tspan><tspan fill="#1f2937">を読ませて</tspan>
+  </text>
+  <text x="80" y="380" font-weight="700" font-size="52" dominant-baseline="hanging">
+    <tspan fill="#1f2937">改善を回し始めた話。</tspan>
+  </text>
+
+  <!-- 右：3つのカード -->
+  <g>
+    <!-- カード1：GA4（バーチャート） -->
+    <g>
+      <rect x="900" y="160" width="240" height="108" rx="14" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+      <!-- バーチャート -->
+      <g transform="translate(966, 214)">
+        <!-- 軸 -->
+        <line x1="-30" y1="22" x2="32" y2="22" stroke="#3a7ba8" stroke-width="2"/>
+        <line x1="-30" y1="22" x2="-30" y2="-22" stroke="#3a7ba8" stroke-width="2"/>
+        <!-- バー -->
+        <rect x="-22" y="0" width="10" height="22" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="1.5"/>
+        <rect x="-7" y="-10" width="10" height="32" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="1.5"/>
+        <rect x="8" y="-18" width="10" height="40" fill="#f59e0b" stroke="#3a7ba8" stroke-width="1.5"/>
+      </g>
+      <text x="1050" y="206" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="20">GA4</text>
+      <text x="1050" y="232" dominant-baseline="central" fill="#6b7280" font-size="13" letter-spacing="0.5">アクセス</text>
+    </g>
+
+    <!-- カード2：Search Console（虫眼鏡＋折れ線） -->
+    <g>
+      <rect x="900" y="282" width="240" height="108" rx="14" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+      <!-- 虫眼鏡＋折れ線 -->
+      <g transform="translate(966, 336)" fill="none" stroke="#3a7ba8" stroke-width="2.5">
+        <!-- 折れ線 -->
+        <polyline points="-30,12 -16,-2 -2,4 12,-12 26,-6" stroke-linejoin="round" stroke-linecap="round"/>
+        <!-- 折れ線のドット -->
+        <circle cx="-16" cy="-2" r="2.5" fill="#3a7ba8"/>
+        <circle cx="-2" cy="4" r="2.5" fill="#3a7ba8"/>
+        <circle cx="12" cy="-12" r="2.5" fill="#f59e0b" stroke="#f59e0b"/>
+        <!-- 虫眼鏡 -->
+        <circle cx="14" cy="14" r="9"/>
+        <line x1="21" y1="21" x2="28" y2="28" stroke-linecap="round"/>
+      </g>
+      <text x="1050" y="324" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="18">Search</text>
+      <text x="1050" y="346" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="18">Console</text>
+      <text x="1050" y="370" dominant-baseline="central" fill="#6b7280" font-size="13" letter-spacing="0.5">検索流入</text>
+    </g>
+
+    <!-- カード3：AIに渡す（吹き出し） -->
+    <g>
+      <rect x="900" y="404" width="240" height="108" rx="14" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+      <!-- 吹き出し -->
+      <g transform="translate(966, 458)">
+        <rect x="-30" y="-22" width="60" height="36" rx="8" fill="#fef3e2" stroke="#3a7ba8" stroke-width="2.5"/>
+        <polygon points="-12,14 -2,14 -8,22" fill="#fef3e2" stroke="#3a7ba8" stroke-width="2.5" stroke-linejoin="round"/>
+        <!-- ドット3つ（チャット風） -->
+        <circle cx="-14" cy="-4" r="3" fill="#3a7ba8"/>
+        <circle cx="0" cy="-4" r="3" fill="#3a7ba8"/>
+        <circle cx="14" cy="-4" r="3" fill="#f59e0b"/>
+      </g>
+      <text x="1050" y="450" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="20">AI</text>
+      <text x="1050" y="476" dominant-baseline="central" fill="#6b7280" font-size="13" letter-spacing="0.5">読み手</text>
+    </g>
+  </g>
+
+  <!-- フッターキャッチ -->
+  <g>
+    <rect x="280" y="568" width="720" height="52" rx="26" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="312" cy="594" r="6" fill="#f59e0b"/>
+    <text x="334" y="594" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20" letter-spacing="0.5">数字を読むのも、AIに任せていい</text>
+  </g>
+</svg>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <text x="80" y="60" fill="#1f2937" font-weight="700" font-size="28" dominant-baseline="hanging">「自分が読む」のをやめて、AIに渡す</text>
+  <line x1="80" y1="105" x2="200" y2="105" stroke="#f59e0b" stroke-width="3"/>
+
+  <!-- BEFORE ラベル -->
+  <text x="80" y="135" fill="#9ca3af" font-weight="700" font-size="16" letter-spacing="3" dominant-baseline="hanging">BEFORE</text>
+
+  <!-- 上段：Before -->
+  <g>
+    <g transform="translate(320, 200)">
+      <circle cx="0" cy="0" r="22" fill="#d1d5db" stroke="#9ca3af" stroke-width="2"/>
+      <path d="M -28,75 Q -28,28 0,28 Q 28,28 28,75 Z" fill="#d1d5db" stroke="#9ca3af" stroke-width="2"/>
+    </g>
+    <text x="320" y="305" text-anchor="middle" fill="#6b7280" font-size="14">担当者</text>
+
+    <line x1="360" y1="220" x2="540" y2="220" stroke="#9ca3af" stroke-width="2.5"/>
+    <polygon points="540,220 532,215 532,225" fill="#9ca3af"/>
+
+    <g transform="translate(560, 175)">
+      <rect x="0" y="0" width="200" height="100" rx="8" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <rect x="0" y="0" width="200" height="20" rx="8" fill="#e5e7eb"/>
+      <rect x="0" y="14" width="200" height="6" fill="#e5e7eb"/>
+      <line x1="20" y1="40" x2="180" y2="40" stroke="#d1d5db"/>
+      <line x1="20" y1="55" x2="180" y2="55" stroke="#d1d5db"/>
+      <line x1="20" y1="70" x2="160" y2="70" stroke="#d1d5db"/>
+      <line x1="20" y1="85" x2="140" y2="85" stroke="#d1d5db"/>
+    </g>
+    <text x="660" y="305" text-anchor="middle" fill="#6b7280" font-size="14">管理画面</text>
+
+    <line x1="780" y1="220" x2="900" y2="220" stroke="#9ca3af" stroke-width="2.5"/>
+    <polygon points="900,220 892,215 892,225" fill="#9ca3af"/>
+
+    <g transform="translate(960, 220)">
+      <circle cx="0" cy="0" r="40" fill="#fff" stroke="#9ca3af" stroke-width="2.5"/>
+      <line x1="-20" y1="-20" x2="20" y2="20" stroke="#9ca3af" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="-20" y1="20" x2="20" y2="-20" stroke="#9ca3af" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+    <text x="960" y="305" text-anchor="middle" fill="#6b7280" font-size="14">画面を閉じる</text>
+  </g>
+
+  <!-- AFTER ラベル -->
+  <text x="80" y="345" fill="#f59e0b" font-weight="700" font-size="16" letter-spacing="3" dominant-baseline="hanging">AFTER</text>
+
+  <!-- 下段：After -->
+  <g>
+    <g transform="translate(320, 410)">
+      <circle cx="0" cy="0" r="22" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="2.5"/>
+      <path d="M -28,75 Q -28,28 0,28 Q 28,28 28,75 Z" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="2.5"/>
+    </g>
+    <text x="320" y="510" text-anchor="middle" fill="#1f2937" font-weight="600" font-size="14">担当者</text>
+
+    <line x1="360" y1="430" x2="540" y2="430" stroke="#3a7ba8" stroke-width="2.5"/>
+    <polygon points="540,430 532,425 532,435" fill="#3a7ba8"/>
+    <text x="450" y="418" text-anchor="middle" fill="#3a7ba8" font-size="12">質問</text>
+
+    <!-- AI（ロボット顔） -->
+    <g transform="translate(560, 380)">
+      <rect x="0" y="0" width="120" height="100" rx="14" fill="#fef3e2" stroke="#f59e0b" stroke-width="2.5"/>
+      <line x1="60" y1="0" x2="60" y2="-10" stroke="#f59e0b" stroke-width="2.5"/>
+      <circle cx="60" cy="-12" r="3" fill="#f59e0b"/>
+      <circle cx="42" cy="40" r="6" fill="#3a7ba8"/>
+      <circle cx="78" cy="40" r="6" fill="#3a7ba8"/>
+      <text x="60" y="74" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="16">AI</text>
+    </g>
+    <text x="620" y="510" text-anchor="middle" fill="#1f2937" font-weight="600" font-size="14">AIエージェント</text>
+
+    <line x1="700" y1="430" x2="880" y2="430" stroke="#3a7ba8" stroke-width="2.5"/>
+    <polygon points="880,430 872,425 872,435" fill="#3a7ba8"/>
+    <text x="790" y="418" text-anchor="middle" fill="#3a7ba8" font-size="12">取りに行く</text>
+
+    <g transform="translate(900, 385)">
+      <rect x="0" y="0" width="200" height="100" rx="8" fill="#fff" stroke="#3a7ba8" stroke-width="2"/>
+      <rect x="0" y="0" width="200" height="20" rx="8" fill="#fef3e2"/>
+      <rect x="0" y="14" width="200" height="6" fill="#fef3e2"/>
+      <rect x="20" y="35" width="30" height="50" fill="#a8d4ee"/>
+      <rect x="60" y="50" width="30" height="35" fill="#a8d4ee"/>
+      <rect x="100" y="40" width="30" height="45" fill="#a8d4ee"/>
+      <rect x="140" y="25" width="30" height="60" fill="#f59e0b"/>
+    </g>
+    <text x="1000" y="510" text-anchor="middle" fill="#1f2937" font-weight="600" font-size="14">管理画面</text>
+
+    <!-- 結果が返る曲線（AIの真下を通って担当者の足元へ：顔にかからない） -->
+    <path d="M 620,488 C 620,560 320,560 320,490" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6 4"/>
+    <polygon points="320,490 315,498 325,498" fill="#f59e0b"/>
+    <text x="470" y="555" text-anchor="middle" fill="#f59e0b" font-weight="600" font-size="13">結果だけ受け取る</text>
+  </g>
+
+  <!-- フッターキャッチ -->
+  <g>
+    <rect x="280" y="600" width="720" height="52" rx="26" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="312" cy="626" r="6" fill="#f59e0b"/>
+    <text x="334" y="626" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20" letter-spacing="0.5">自分が読むのをやめて、AIに読ませる</text>
+  </g>
+</svg>
