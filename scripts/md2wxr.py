@@ -33,6 +33,7 @@ Markdown形式（先頭にYAML front matter）:
 """
 import argparse
 import re
+import shutil
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -44,6 +45,8 @@ import markdown as md_lib
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_ARTICLES_DIR = ROOT / "articles"
 DEFAULT_OUTPUT_DIR = ROOT / "wxr"
+DEFAULT_PNG_DIR = ROOT / "images" / "png"
+NOTE_IMPORT_DIR = Path(r"J:\マイドライブ\AI_support_Projects\note-import")
 PAGES_BASE_URL = "https://haryukin9.github.io/vibe-coding-records"
 SITE_TITLE = "vibe-coding-records"
 
@@ -179,6 +182,41 @@ def build_item(md_path: Path, post_id: int, base_url: str, status: str) -> str:
     )
 
 
+def sync_to_note_import(md_path: Path, wxr_path: Path, note_import_dir: Path,
+                        png_dir: Path) -> None:
+    """note-importフォルダにXMLとアイキャッチPNGをペアでコピーする。
+
+    アイキャッチは {md_stem}-eyecatch.png を優先、なければ {slug}-eyecatch.png を探し、
+    どちらの場合もコピー先では {md_stem}-eyecatch.png に統一する。
+    """
+    note_import_dir.mkdir(parents=True, exist_ok=True)
+    md_stem = md_path.stem
+
+    # XMLコピー（ファイル名は {md_stem}.xml に統一）
+    dest_xml = note_import_dir / f"{md_stem}.xml"
+    shutil.copy2(wxr_path, dest_xml)
+    print(f"[note-import] xml -> {dest_xml.name}")
+
+    # アイキャッチPNGを探してコピー
+    candidates = [png_dir / f"{md_stem}-eyecatch.png"]
+    try:
+        post = frontmatter.load(md_path)
+        slug = (post.metadata or {}).get("slug")
+        if slug:
+            candidates.append(png_dir / f"{slug}-eyecatch.png")
+    except Exception:
+        pass
+
+    for src_png in candidates:
+        if src_png.exists():
+            dest_png = note_import_dir / f"{md_stem}-eyecatch.png"
+            shutil.copy2(src_png, dest_png)
+            print(f"[note-import] png -> {dest_png.name}  (from {src_png.name})")
+            return
+
+    print(f"[note-import] WARN: アイキャッチが見つかりません ({md_stem}-eyecatch.png)")
+
+
 def collect_targets(args) -> list[Path]:
     if args.all:
         articles_dir = Path(args.articles_dir).resolve()
@@ -222,6 +260,12 @@ def run(args):
     out_path.write_text(header + "".join(items_xml) + WXR_FOOTER, encoding="utf-8")
     print(f"[md2wxr] saved: {out_path}  ({len(targets)} item(s))")
 
+    # note-importフォルダへの同期（--all 一括変換時はスキップ）
+    if not args.no_note_import and not args.all:
+        note_import_dir = Path(args.note_import_dir)
+        png_dir = Path(args.png_dir)
+        sync_to_note_import(targets[0], out_path, note_import_dir, png_dir)
+
 
 def main():
     parser = argparse.ArgumentParser(description="Markdown -> WXR (note インポート用) 変換")
@@ -232,6 +276,12 @@ def main():
     parser.add_argument("--articles-dir", default=str(DEFAULT_ARTICLES_DIR))
     parser.add_argument("--base-url", default=PAGES_BASE_URL)
     parser.add_argument("--status", default="draft", choices=["draft", "publish"])
+    parser.add_argument("--note-import-dir", default=str(NOTE_IMPORT_DIR),
+                        help="WXRとアイキャッチPNGのコピー先（Googleドライブ等）")
+    parser.add_argument("--png-dir", default=str(DEFAULT_PNG_DIR),
+                        help="アイキャッチPNGの探索元ディレクトリ")
+    parser.add_argument("--no-note-import", action="store_true",
+                        help="note-importフォルダへのコピーをスキップする")
     args = parser.parse_args()
     run(args)
 
