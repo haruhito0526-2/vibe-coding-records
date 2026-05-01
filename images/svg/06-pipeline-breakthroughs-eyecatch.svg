@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <!-- 上部 -->
+  <text x="80" y="60" fill="#5da8d4" font-weight="600" font-size="18" letter-spacing="3" dominant-baseline="hanging">中小企業のひとりDX担当が、AIで会社をアップデートする</text>
+  <line x1="80" y1="98" x2="200" y2="98" stroke="#5da8d4" stroke-width="3"/>
+  <text x="1200" y="60" text-anchor="end" fill="#f59e0b" font-weight="700" font-size="22" letter-spacing="2" dominant-baseline="hanging">#06 — PIPELINE ②</text>
+
+  <!-- メインタイトル -->
+  <text x="80" y="170" font-weight="700" font-size="58" dominant-baseline="hanging">
+    <tspan fill="#1f2937">このnote連載、</tspan>
+  </text>
+  <text x="80" y="248" font-weight="700" font-size="58" dominant-baseline="hanging">
+    <tspan fill="#1f2937">ほぼ</tspan><tspan fill="#3a7ba8">スマホ</tspan><tspan fill="#1f2937">で</tspan>
+  </text>
+  <text x="80" y="326" font-weight="700" font-size="58" dominant-baseline="hanging">
+    <tspan fill="#1f2937">作っています。</tspan>
+  </text>
+  <text x="80" y="404" font-weight="700" font-size="58" dominant-baseline="hanging">
+    <tspan fill="#f59e0b">3つの突破口</tspan><tspan fill="#1f2937">の話。</tspan>
+  </text>
+
+  <!-- 右：3つのブレイクスルーカード -->
+  <g>
+    <!-- カード1：API化（写真アイコン） -->
+    <g>
+      <rect x="900" y="160" width="240" height="108" rx="14" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+      <!-- 写真フレーム -->
+      <g transform="translate(966, 214)">
+        <rect x="-32" y="-24" width="64" height="48" rx="4" fill="#fef3e2" stroke="#3a7ba8" stroke-width="2.5"/>
+        <!-- 太陽 -->
+        <circle cx="-14" cy="-10" r="5.5" fill="#f59e0b"/>
+        <!-- 山 -->
+        <polygon points="-28,20 -12,2 2,14 16,-2 28,20" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="1.5" stroke-linejoin="round"/>
+      </g>
+      <text x="1050" y="206" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="20">API化</text>
+      <text x="1050" y="232" dominant-baseline="central" fill="#6b7280" font-size="13" letter-spacing="0.5">画像生成</text>
+    </g>
+
+    <!-- カード2：SVG（図形のスケッチ） -->
+    <g>
+      <rect x="900" y="282" width="240" height="108" rx="14" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+      <!-- 図形群 -->
+      <g transform="translate(966, 336)" stroke="#3a7ba8" stroke-width="2.5" fill="none">
+        <rect x="-30" y="-16" width="28" height="28" rx="3"/>
+        <circle cx="14" cy="-2" r="13"/>
+        <polygon points="-18,22 0,22 -9,8" stroke-linejoin="round"/>
+      </g>
+      <text x="1050" y="328" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="20">SVG</text>
+      <text x="1050" y="354" dominant-baseline="central" fill="#6b7280" font-size="13" letter-spacing="0.5">図解作成</text>
+    </g>
+
+    <!-- カード3：XML（タグ） -->
+    <g>
+      <rect x="900" y="404" width="240" height="108" rx="14" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+      <text x="966" y="458" text-anchor="middle" dominant-baseline="central" fill="#3a7ba8" font-weight="700" font-size="36" letter-spacing="0">&lt;/&gt;</text>
+      <text x="1050" y="450" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="20">XML</text>
+      <text x="1050" y="476" dominant-baseline="central" fill="#6b7280" font-size="13" letter-spacing="0.5">取り込み</text>
+    </g>
+  </g>
+
+  <!-- フッターキャッチ -->
+  <g>
+    <rect x="280" y="568" width="720" height="52" rx="26" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="312" cy="594" r="6" fill="#f59e0b"/>
+    <text x="334" y="594" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20" letter-spacing="0.5">画像・図解・取り込み。3つが揃ってスマホで動いた</text>
+  </g>
+</svg>

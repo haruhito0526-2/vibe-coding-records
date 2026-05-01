@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="softShadow62" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8f9fa"/>
+
+  <!-- ヘッダー -->
+  <text x="80" y="80" fill="#5da8d4" font-weight="600" font-size="22" letter-spacing="4" dominant-baseline="hanging">CHAPTER 02 — DIRECT CALL</text>
+  <text x="80" y="112" font-weight="700" font-size="44" dominant-baseline="hanging">
+    <tspan fill="#1f2937">ナノバナナを</tspan><tspan fill="#3a7ba8">API</tspan><tspan fill="#1f2937">でClaudeから直接呼ぶ</tspan>
+  </text>
+  <text x="1840" y="80" text-anchor="end" fill="#6b7280" font-weight="500" font-size="22" dominant-baseline="hanging">VOL.6 — PIPELINE ②</text>
+  <text x="1840" y="116" text-anchor="end" fill="#f59e0b" font-weight="700" font-size="32" letter-spacing="1.4" dominant-baseline="hanging">DIRECT</text>
+
+  <!-- BEFORE -->
+  <g>
+    <rect x="120" y="240" width="820" height="640" rx="20" fill="#fef3e2" opacity="0.5"/>
+    <text x="150" y="270" fill="#6b7280" font-weight="700" font-size="20" letter-spacing="3" dominant-baseline="hanging">BEFORE</text>
+    <text x="150" y="304" fill="#1f2937" font-weight="700" font-size="26" dominant-baseline="hanging">画面を行き来する、中継だらけの動線</text>
+
+    <!-- スマホ1：画像生成画面 -->
+    <g transform="translate(180, 380)">
+      <rect x="0" y="0" width="200" height="360" rx="22" fill="#fff" stroke="#3a7ba8" stroke-width="3"/>
+      <rect x="76" y="14" width="48" height="6" rx="3" fill="#a8d4ee"/>
+      <rect x="14" y="34" width="172" height="306" rx="6" fill="#fef3e2"/>
+      <text x="100" y="60" text-anchor="middle" fill="#f59e0b" font-weight="700" font-size="14" letter-spacing="1">画像生成画面</text>
+      <rect x="34" y="90" width="132" height="100" rx="6" fill="#fff" stroke="#fde6c1" stroke-width="2"/>
+      <circle cx="148" cy="110" r="9" fill="#f59e0b"/>
+      <polyline points="44,178 70,150 96,164 124,140 156,150" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="34" y="206" width="132" height="32" rx="16" fill="#f59e0b"/>
+      <text x="100" y="222" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="13">ダウンロード</text>
+      <text x="100" y="265" text-anchor="middle" fill="#6b7280" font-size="11">→ 端末に保存</text>
+    </g>
+
+    <!-- 矢印（中継1） -->
+    <g stroke="#6b7280" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="406" y1="560" x2="486" y2="560"/>
+      <polyline points="474,551 488,560 474,569"/>
+    </g>
+    <text x="446" y="540" text-anchor="middle" fill="#6b7280" font-size="13">移動</text>
+
+    <!-- スマホ2：Claude画面 -->
+    <g transform="translate(510, 380)">
+      <rect x="0" y="0" width="200" height="360" rx="22" fill="#fff" stroke="#3a7ba8" stroke-width="3"/>
+      <rect x="76" y="14" width="48" height="6" rx="3" fill="#a8d4ee"/>
+      <rect x="14" y="34" width="172" height="306" rx="6" fill="#ecf2f7"/>
+      <text x="100" y="60" text-anchor="middle" fill="#3a7ba8" font-weight="700" font-size="14" letter-spacing="1">Claude画面</text>
+      <rect x="34" y="90" width="132" height="50" rx="6" fill="#fff" stroke="#a8d4ee" stroke-width="2"/>
+      <line x1="46" y1="106" x2="154" y2="106" stroke="#5da8d4" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="46" y1="118" x2="130" y2="118" stroke="#5da8d4" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="34" y="156" width="132" height="32" rx="16" fill="#5da8d4"/>
+      <text x="100" y="172" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="13">画像を貼り直す</text>
+      <text x="100" y="220" text-anchor="middle" fill="#6b7280" font-size="11">→ ここに貼り付け</text>
+    </g>
+
+    <!-- 中継ラベル -->
+    <g transform="translate(750, 480)">
+      <rect x="0" y="0" width="160" height="160" rx="14" fill="#fff" stroke="#6b7280" stroke-width="2" stroke-dasharray="4 4"/>
+      <text x="80" y="40" text-anchor="middle" fill="#6b7280" font-weight="700" font-size="14" letter-spacing="1">中継</text>
+      <text x="80" y="76" text-anchor="middle" fill="#1f2937" font-weight="500" font-size="13">画面の移動</text>
+      <text x="80" y="98" text-anchor="middle" fill="#1f2937" font-weight="500" font-size="13">ダウンロード</text>
+      <text x="80" y="120" text-anchor="middle" fill="#1f2937" font-weight="500" font-size="13">貼り直し</text>
+      <text x="80" y="142" text-anchor="middle" fill="#6b7280" font-size="11">これが5〜6回</text>
+    </g>
+
+    <text x="530" y="810" text-anchor="middle" fill="#6b7280" font-size="16">1記事5〜6枚作るとなると、中継だけで時間が溶ける</text>
+  </g>
+
+  <!-- 中央：矢印 -->
+  <g stroke="#f59e0b" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="970" y1="560" x2="1040" y2="560"/>
+    <polyline points="1028,548 1042,560 1028,572"/>
+  </g>
+
+  <!-- AFTER -->
+  <g>
+    <rect x="1060" y="240" width="780" height="640" rx="20" fill="#ecf2f7" opacity="0.5"/>
+    <text x="1090" y="270" fill="#3a7ba8" font-weight="700" font-size="20" letter-spacing="3" dominant-baseline="hanging">AFTER</text>
+    <text x="1090" y="304" fill="#1f2937" font-weight="700" font-size="26" dominant-baseline="hanging">同じ画面で、画像も原稿もまわる</text>
+
+    <!-- スマホ1台 -->
+    <g transform="translate(1320, 380)">
+      <rect x="0" y="0" width="260" height="440" rx="26" fill="#fff" stroke="#3a7ba8" stroke-width="4"/>
+      <rect x="100" y="16" width="60" height="7" rx="3.5" fill="#a8d4ee"/>
+      <rect x="16" y="38" width="228" height="384" rx="6" fill="#ecf2f7"/>
+      <text x="130" y="64" text-anchor="middle" fill="#3a7ba8" font-weight="700" font-size="14" letter-spacing="1">Claudeの画面</text>
+
+      <!-- 原稿エリア -->
+      <rect x="36" y="94" width="188" height="80" rx="6" fill="#fff" stroke="#a8d4ee" stroke-width="2"/>
+      <line x1="50" y1="112" x2="206" y2="112" stroke="#5da8d4" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="50" y1="128" x2="206" y2="128" stroke="#5da8d4" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="50" y1="144" x2="180" y2="144" stroke="#5da8d4" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="50" y1="160" x2="200" y2="160" stroke="#5da8d4" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- API呼び出し（双方向） -->
+      <g stroke="#f59e0b" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="130" y1="186" x2="130" y2="216"/>
+        <polyline points="123,208 130,216 137,208"/>
+        <line x1="130" y1="276" x2="130" y2="246"/>
+        <polyline points="123,254 130,246 137,254"/>
+      </g>
+      <text x="130" y="232" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="11" letter-spacing="1">API</text>
+
+      <!-- 画像エリア -->
+      <rect x="36" y="288" width="188" height="100" rx="6" fill="#fef3e2" stroke="#f59e0b" stroke-width="2"/>
+      <circle cx="206" cy="310" r="9" fill="#f59e0b"/>
+      <polyline points="46,376 76,346 106,360 146,328 196,346" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- 直結ラベル -->
+    <g transform="translate(1100, 480)">
+      <rect x="0" y="0" width="180" height="160" rx="14" fill="#fff" stroke="#f59e0b" stroke-width="2"/>
+      <text x="90" y="40" text-anchor="middle" fill="#f59e0b" font-weight="700" font-size="14" letter-spacing="1">直結</text>
+      <text x="90" y="76" text-anchor="middle" fill="#1f2937" font-weight="500" font-size="13">画面の移動なし</text>
+      <text x="90" y="98" text-anchor="middle" fill="#1f2937" font-weight="500" font-size="13">ダウンロードなし</text>
+      <text x="90" y="120" text-anchor="middle" fill="#1f2937" font-weight="500" font-size="13">貼り直しなし</text>
+      <text x="90" y="142" text-anchor="middle" fill="#6b7280" font-size="11">人間は添削だけ</text>
+    </g>
+
+    <text x="1450" y="850" text-anchor="middle" fill="#6b7280" font-size="16">原稿を書きながら、同じ画面で画像も依頼できる</text>
+  </g>
+
+  <!-- フッター -->
+  <g>
+    <rect x="380" y="940" width="1160" height="56" rx="28" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="414" cy="968" r="6" fill="#f59e0b"/>
+    <text x="438" y="968" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="22" letter-spacing="0.8">中継を畳んで、原稿と画像を同じ画面に揃えた</text>
+  </g>
+</svg>
