@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <text x="80" y="60" fill="#1f2937" font-weight="700" font-size="34" dominant-baseline="hanging">ソフトを開かずに、図表を作りたかった</text>
+  <line x1="80" y1="115" x2="220" y2="115" stroke="#f59e0b" stroke-width="3"/>
+
+  <!-- 上段：旧フロー -->
+  <g transform="translate(0, 165)">
+    <text x="80" y="0" fill="#6b7280" font-size="16" font-weight="600">これまで（PowerPoint / Canva / Illustrator）</text>
+
+    <!-- ステップ名（上に） -->
+    <text x="190" y="40" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="15">ソフトを開く</text>
+    <text x="380" y="40" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="15">テキスト</text>
+    <text x="570" y="40" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="15">オブジェクト</text>
+    <text x="760" y="40" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="15">並べる</text>
+    <text x="950" y="40" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="15">書き出す</text>
+
+    <!-- 横軸（点線） -->
+    <line x1="140" y1="100" x2="1000" y2="100" stroke="#9ca3af" stroke-width="2.5" stroke-dasharray="8,5"/>
+
+    <!-- アイコン -->
+    <g transform="translate(190, 100)">
+      <circle cx="0" cy="0" r="36" fill="#fff" stroke="#9ca3af" stroke-width="2.5"/>
+      <rect x="-15" y="-10" width="30" height="22" rx="3" fill="none" stroke="#9ca3af" stroke-width="2.2"/>
+      <line x1="-15" y1="-3" x2="15" y2="-3" stroke="#9ca3af" stroke-width="2"/>
+    </g>
+    <g transform="translate(380, 100)">
+      <circle cx="0" cy="0" r="36" fill="#fff" stroke="#9ca3af" stroke-width="2.5"/>
+      <text x="0" y="0" text-anchor="middle" dominant-baseline="central" fill="#9ca3af" font-weight="700" font-size="20">T</text>
+    </g>
+    <g transform="translate(570, 100)">
+      <circle cx="0" cy="0" r="36" fill="#fff" stroke="#9ca3af" stroke-width="2.5"/>
+      <rect x="-13" y="-12" width="17" height="17" fill="none" stroke="#9ca3af" stroke-width="2.2"/>
+      <circle cx="7" cy="5" r="9" fill="none" stroke="#9ca3af" stroke-width="2.2"/>
+    </g>
+    <g transform="translate(760, 100)">
+      <circle cx="0" cy="0" r="36" fill="#fff" stroke="#9ca3af" stroke-width="2.5"/>
+      <rect x="-15" y="-9" width="12" height="12" fill="none" stroke="#9ca3af" stroke-width="2.2"/>
+      <rect x="0" y="-9" width="12" height="12" fill="none" stroke="#9ca3af" stroke-width="2.2"/>
+      <rect x="-7" y="5" width="12" height="12" fill="none" stroke="#9ca3af" stroke-width="2.2"/>
+    </g>
+    <g transform="translate(950, 100)">
+      <circle cx="0" cy="0" r="36" fill="#fff" stroke="#9ca3af" stroke-width="2.5"/>
+      <path d="M -9,-10 L -9,7 L 9,7 L 9,-10" fill="none" stroke="#9ca3af" stroke-width="2.2"/>
+      <line x1="0" y1="-10" x2="0" y2="3" stroke="#9ca3af" stroke-width="2.2"/>
+      <polyline points="-5,-2 0,3 5,-2" fill="none" stroke="#9ca3af" stroke-width="2.2" stroke-linejoin="round"/>
+    </g>
+
+    <!-- 大きな数字バッジ（独立配置、線なし） -->
+    <g transform="translate(1130, 100)">
+      <rect x="-90" y="-45" width="180" height="90" rx="14" fill="#fef3e2" stroke="#f59e0b" stroke-width="3"/>
+      <text x="0" y="-8" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="44">1時間</text>
+      <text x="0" y="28" text-anchor="middle" fill="#6b7280" font-size="13">／1枚</text>
+    </g>
+  </g>
+
+  <!-- 下段：新フロー -->
+  <g transform="translate(0, 400)">
+    <text x="80" y="0" fill="#3a7ba8" font-size="16" font-weight="700">これから（Claude Code）</text>
+
+    <!-- ステップ名（上に） -->
+    <text x="290" y="40" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="16">文脈を渡す</text>
+    <text x="610" y="40" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="16">SVGを書かせる</text>
+    <text x="930" y="40" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="16">画像化してnoteへ</text>
+
+    <!-- 横軸（実線） -->
+    <line x1="140" y1="100" x2="1000" y2="100" stroke="#3a7ba8" stroke-width="2.5"/>
+
+    <!-- アイコン -->
+    <g transform="translate(290, 100)">
+      <circle cx="0" cy="0" r="40" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="2.8"/>
+      <rect x="-15" y="-12" width="30" height="24" rx="3" fill="#fff" stroke="#3a7ba8" stroke-width="2.2"/>
+      <line x1="-10" y1="-5" x2="10" y2="-5" stroke="#3a7ba8" stroke-width="2"/>
+      <line x1="-10" y1="0" x2="10" y2="0" stroke="#3a7ba8" stroke-width="2"/>
+      <line x1="-10" y1="5" x2="5" y2="5" stroke="#3a7ba8" stroke-width="2"/>
+    </g>
+    <g transform="translate(610, 100)">
+      <circle cx="0" cy="0" r="40" fill="#fef3e2" stroke="#f59e0b" stroke-width="2.8"/>
+      <text x="0" y="0" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="18">&lt;svg&gt;</text>
+    </g>
+    <g transform="translate(930, 100)">
+      <circle cx="0" cy="0" r="40" fill="#fff" stroke="#3a7ba8" stroke-width="2.8"/>
+      <rect x="-18" y="-13" width="36" height="26" rx="3" fill="#fff" stroke="#3a7ba8" stroke-width="2.2"/>
+      <circle cx="-7" cy="-3" r="3.5" fill="none" stroke="#3a7ba8" stroke-width="2"/>
+      <polyline points="-16,10 -3,-1 4,7 12,-3 18,2" fill="none" stroke="#3a7ba8" stroke-width="2" stroke-linejoin="round"/>
+    </g>
+
+    <!-- 大きな数字バッジ（独立配置、線なし） -->
+    <g transform="translate(1130, 100)">
+      <rect x="-90" y="-45" width="180" height="90" rx="14" fill="#a8d4ee" stroke="#3a7ba8" stroke-width="3"/>
+      <text x="0" y="-8" text-anchor="middle" dominant-baseline="central" fill="#3a7ba8" font-weight="700" font-size="44">数分</text>
+      <text x="0" y="28" text-anchor="middle" fill="#3a7ba8" font-size="13">／複数枚</text>
+    </g>
+  </g>
+
+  <!-- フッターキャッチ -->
+  <g>
+    <rect x="200" y="608" width="880" height="42" rx="21" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="232" cy="629" r="6" fill="#f59e0b"/>
+    <text x="254" y="629" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="18" letter-spacing="0.5">書く側ではなく、書かせる側に回る</text>
+  </g>
+</svg>

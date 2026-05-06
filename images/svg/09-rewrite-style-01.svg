@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <text x="80" y="60" fill="#1f2937" font-weight="700" font-size="34" dominant-baseline="hanging">5W1HのWhatしか、読まれていない</text>
+  <line x1="80" y1="115" x2="220" y2="115" stroke="#f59e0b" stroke-width="3"/>
+
+  <!-- 左：5W1Hカード -->
+  <g transform="translate(80, 180)">
+    <text x="0" y="0" fill="#6b7280" font-size="16" font-weight="600">記事を読むときの自分の挙動</text>
+
+    <!-- Who -->
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="170" height="68" rx="12" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <text x="20" y="28" fill="#9ca3af" font-weight="700" font-size="16">Who</text>
+      <line x1="20" y1="46" x2="150" y2="46" stroke="#d1d5db" stroke-width="1.5"/>
+      <line x1="20" y1="56" x2="130" y2="56" stroke="#d1d5db" stroke-width="1.5"/>
+    </g>
+    <!-- When -->
+    <g transform="translate(190, 30)">
+      <rect x="0" y="0" width="170" height="68" rx="12" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <text x="20" y="28" fill="#9ca3af" font-weight="700" font-size="16">When</text>
+      <line x1="20" y1="46" x2="150" y2="46" stroke="#d1d5db" stroke-width="1.5"/>
+      <line x1="20" y1="56" x2="130" y2="56" stroke="#d1d5db" stroke-width="1.5"/>
+    </g>
+    <!-- Where -->
+    <g transform="translate(0, 114)">
+      <rect x="0" y="0" width="170" height="68" rx="12" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <text x="20" y="28" fill="#9ca3af" font-weight="700" font-size="16">Where</text>
+      <line x1="20" y1="46" x2="150" y2="46" stroke="#d1d5db" stroke-width="1.5"/>
+      <line x1="20" y1="56" x2="130" y2="56" stroke="#d1d5db" stroke-width="1.5"/>
+    </g>
+    <!-- What（強調） -->
+    <g transform="translate(190, 114)">
+      <rect x="0" y="0" width="170" height="68" rx="12" fill="#fef3e2" stroke="#f59e0b" stroke-width="3"/>
+      <text x="20" y="30" fill="#f59e0b" font-weight="700" font-size="22">What</text>
+      <line x1="20" y1="50" x2="150" y2="50" stroke="#f59e0b" stroke-width="2.5"/>
+      <line x1="20" y1="60" x2="130" y2="60" stroke="#f59e0b" stroke-width="2.5"/>
+      <!-- チェック -->
+      <circle cx="180" cy="34" r="16" fill="#f59e0b"/>
+      <polyline points="172,34 178,40 188,29" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <!-- Why -->
+    <g transform="translate(0, 198)">
+      <rect x="0" y="0" width="170" height="68" rx="12" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <text x="20" y="28" fill="#9ca3af" font-weight="700" font-size="16">Why</text>
+      <line x1="20" y1="46" x2="150" y2="46" stroke="#d1d5db" stroke-width="1.5"/>
+      <line x1="20" y1="56" x2="130" y2="56" stroke="#d1d5db" stroke-width="1.5"/>
+    </g>
+    <!-- How -->
+    <g transform="translate(190, 198)">
+      <rect x="0" y="0" width="170" height="68" rx="12" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <text x="20" y="28" fill="#9ca3af" font-weight="700" font-size="16">How</text>
+      <line x1="20" y1="46" x2="150" y2="46" stroke="#d1d5db" stroke-width="1.5"/>
+      <line x1="20" y1="56" x2="130" y2="56" stroke="#d1d5db" stroke-width="1.5"/>
+    </g>
+
+    <text x="180" y="320" text-anchor="middle" fill="#1f2937" font-weight="700" font-size="18">「自分も同じことしたい」</text>
+    <text x="180" y="346" text-anchor="middle" fill="#6b7280" font-size="15">のWhatだけを拾っている</text>
+  </g>
+
+  <!-- 矢印 -->
+  <g transform="translate(580, 320)">
+    <line x1="0" y1="0" x2="80" y2="0" stroke="#3a7ba8" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="80,0 70,-7 70,7" fill="#3a7ba8"/>
+  </g>
+
+  <!-- 右：4つのチェックリスト -->
+  <g transform="translate(700, 180)">
+    <rect x="0" y="0" width="510" height="320" rx="14" fill="#fff" stroke="#3a7ba8" stroke-width="2.5"/>
+    <text x="30" y="40" fill="#3a7ba8" font-weight="700" font-size="22">読み手が知りたい4つ（=What）</text>
+
+    <!-- 項目1 -->
+    <g transform="translate(30, 80)">
+      <circle cx="14" cy="14" r="14" fill="#f59e0b"/>
+      <text x="14" y="14" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="14">1</text>
+      <text x="44" y="20" fill="#1f2937" font-weight="600" font-size="20">何をしたかったか</text>
+    </g>
+    <!-- 項目2 -->
+    <g transform="translate(30, 130)">
+      <circle cx="14" cy="14" r="14" fill="#f59e0b"/>
+      <text x="14" y="14" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="14">2</text>
+      <text x="44" y="20" fill="#1f2937" font-weight="600" font-size="20">できたか、できなかったか</text>
+    </g>
+    <!-- 項目3 -->
+    <g transform="translate(30, 180)">
+      <circle cx="14" cy="14" r="14" fill="#f59e0b"/>
+      <text x="14" y="14" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="14">3</text>
+      <text x="44" y="20" fill="#1f2937" font-weight="600" font-size="20">できたら、どうなったか</text>
+    </g>
+    <!-- 項目4 -->
+    <g transform="translate(30, 230)">
+      <circle cx="14" cy="14" r="14" fill="#f59e0b"/>
+      <text x="14" y="14" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="14">4</text>
+      <text x="44" y="20" fill="#1f2937" font-weight="600" font-size="20">できないなら、何が課題か</text>
+    </g>
+
+    <text x="30" y="290" fill="#6b7280" font-size="15">＋具体的な手段は、プロンプト1つで足りる（=How）</text>
+  </g>
+
+  <!-- フッターキャッチ -->
+  <g>
+    <rect x="200" y="588" width="880" height="52" rx="26" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="232" cy="614" r="6" fill="#f59e0b"/>
+    <text x="254" y="614" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20" letter-spacing="0.5">技術詳細（How）は、読まれていないかもしれない</text>
+  </g>
+</svg>

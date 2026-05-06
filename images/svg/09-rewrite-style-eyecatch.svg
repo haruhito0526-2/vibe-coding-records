@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <!-- 上部 -->
+  <text x="80" y="60" fill="#5da8d4" font-weight="600" font-size="18" letter-spacing="3" dominant-baseline="hanging">中小企業のひとりDX担当が、AIで会社をアップデートする</text>
+  <line x1="80" y1="98" x2="200" y2="98" stroke="#5da8d4" stroke-width="3"/>
+  <text x="1200" y="60" text-anchor="end" fill="#f59e0b" font-weight="700" font-size="22" letter-spacing="2" dominant-baseline="hanging">#09 — METHOD</text>
+
+  <!-- メインタイトル -->
+  <text x="80" y="160" font-weight="700" font-size="46" dominant-baseline="hanging">
+    <tspan fill="#1f2937">5W1Hで</tspan><tspan fill="#f59e0b">What</tspan><tspan fill="#1f2937">しか</tspan>
+  </text>
+  <text x="80" y="222" font-weight="700" font-size="46" dominant-baseline="hanging">
+    <tspan fill="#1f2937">読まなくなったので、</tspan>
+  </text>
+  <text x="80" y="284" font-weight="700" font-size="46" dominant-baseline="hanging">
+    <tspan fill="#1f2937">書き方を変えてみた話。</tspan>
+  </text>
+
+  <!-- サブタイトル -->
+  <text x="80" y="360" fill="#3a7ba8" font-weight="600" font-size="20" letter-spacing="1">— SVG生成スキルを事例に</text>
+
+  <!-- 右側：5W1Hカード -->
+  <g transform="translate(870, 175)">
+    <text x="170" y="-15" text-anchor="middle" fill="#6b7280" font-size="14" font-weight="600">読み手が読んでいる箇所</text>
+
+    <!-- Who（グレー） -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="160" height="60" rx="10" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <text x="20" y="22" fill="#9ca3af" font-weight="700" font-size="14">Who</text>
+      <line x1="20" y1="40" x2="140" y2="40" stroke="#d1d5db" stroke-width="1.5"/>
+      <line x1="20" y1="50" x2="120" y2="50" stroke="#d1d5db" stroke-width="1.5"/>
+    </g>
+    <!-- When（グレー） -->
+    <g transform="translate(180, 0)">
+      <rect x="0" y="0" width="160" height="60" rx="10" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <text x="20" y="22" fill="#9ca3af" font-weight="700" font-size="14">When</text>
+      <line x1="20" y1="40" x2="140" y2="40" stroke="#d1d5db" stroke-width="1.5"/>
+      <line x1="20" y1="50" x2="120" y2="50" stroke="#d1d5db" stroke-width="1.5"/>
+    </g>
+
+    <!-- Where（グレー） -->
+    <g transform="translate(0, 76)">
+      <rect x="0" y="0" width="160" height="60" rx="10" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <text x="20" y="22" fill="#9ca3af" font-weight="700" font-size="14">Where</text>
+      <line x1="20" y1="40" x2="140" y2="40" stroke="#d1d5db" stroke-width="1.5"/>
+      <line x1="20" y1="50" x2="120" y2="50" stroke="#d1d5db" stroke-width="1.5"/>
+    </g>
+    <!-- What（オレンジ強調） -->
+    <g transform="translate(180, 76)">
+      <rect x="0" y="0" width="160" height="60" rx="10" fill="#fef3e2" stroke="#f59e0b" stroke-width="3"/>
+      <text x="20" y="24" fill="#f59e0b" font-weight="700" font-size="20">What</text>
+      <line x1="20" y1="44" x2="140" y2="44" stroke="#f59e0b" stroke-width="2.5"/>
+      <line x1="20" y1="52" x2="120" y2="52" stroke="#f59e0b" stroke-width="2.5"/>
+      <!-- チェック -->
+      <circle cx="170" cy="30" r="14" fill="#f59e0b"/>
+      <polyline points="164,30 168,34 176,25" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Why（グレー） -->
+    <g transform="translate(0, 152)">
+      <rect x="0" y="0" width="160" height="60" rx="10" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <text x="20" y="22" fill="#9ca3af" font-weight="700" font-size="14">Why</text>
+      <line x1="20" y1="40" x2="140" y2="40" stroke="#d1d5db" stroke-width="1.5"/>
+      <line x1="20" y1="50" x2="120" y2="50" stroke="#d1d5db" stroke-width="1.5"/>
+    </g>
+    <!-- How（グレー） -->
+    <g transform="translate(180, 152)">
+      <rect x="0" y="0" width="160" height="60" rx="10" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <text x="20" y="22" fill="#9ca3af" font-weight="700" font-size="14">How</text>
+      <line x1="20" y1="40" x2="140" y2="40" stroke="#d1d5db" stroke-width="1.5"/>
+      <line x1="20" y1="50" x2="120" y2="50" stroke="#d1d5db" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- フッターキャッチ -->
+  <g>
+    <rect x="200" y="568" width="880" height="52" rx="26" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="232" cy="594" r="6" fill="#f59e0b"/>
+    <text x="254" y="594" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="20" letter-spacing="0.5">書くべきは、目的・結果・継続課題だけ</text>
+  </g>
+</svg>

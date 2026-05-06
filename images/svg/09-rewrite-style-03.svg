@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <text x="80" y="60" fill="#1f2937" font-weight="700" font-size="34" dominant-baseline="hanging">メモリ保存が、スキルになっていった</text>
+  <line x1="80" y1="115" x2="220" y2="115" stroke="#f59e0b" stroke-width="3"/>
+
+  <!-- 上段：運用ルール（中心X=640） -->
+  <g transform="translate(0, 170)">
+    <text x="640" y="0" text-anchor="middle" fill="#6b7280" font-size="16" font-weight="600">運用ルールはたった2つ</text>
+
+    <!-- ルール1 -->
+    <g transform="translate(220, 30)">
+      <rect x="0" y="0" width="320" height="60" rx="10" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <text x="160" y="32" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="17">詰まって解決した</text>
+    </g>
+    <text x="640" y="65" text-anchor="middle" fill="#3a7ba8" font-size="22" font-weight="700">→</text>
+    <g transform="translate(740, 30)">
+      <rect x="0" y="0" width="320" height="60" rx="10" fill="#fef3e2" stroke="#f59e0b" stroke-width="2.5"/>
+      <text x="160" y="32" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="18">メモリ保存</text>
+    </g>
+
+    <!-- ルール2 -->
+    <g transform="translate(220, 110)">
+      <rect x="0" y="0" width="320" height="60" rx="10" fill="#fff" stroke="#9ca3af" stroke-width="2"/>
+      <text x="160" y="32" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="17">うまくいった</text>
+    </g>
+    <text x="640" y="145" text-anchor="middle" fill="#3a7ba8" font-size="22" font-weight="700">→</text>
+    <g transform="translate(740, 110)">
+      <rect x="0" y="0" width="320" height="60" rx="10" fill="#fef3e2" stroke="#f59e0b" stroke-width="2.5"/>
+      <text x="160" y="32" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="18">メモリ保存</text>
+    </g>
+  </g>
+
+  <!-- 中段：太い矢印「スキル化」（中心X=640） -->
+  <g transform="translate(640, 380)">
+    <line x1="0" y1="-15" x2="0" y2="40" stroke="#f59e0b" stroke-width="6" stroke-linecap="round"/>
+    <polygon points="0,52 -14,30 14,30" fill="#f59e0b"/>
+    <text x="40" y="20" fill="#f59e0b" font-weight="700" font-size="20">スキル化</text>
+  </g>
+
+  <!-- 下段：Before/After 大きな数字対比（中心X=640） -->
+  <g transform="translate(0, 450)">
+    <!-- Before -->
+    <g transform="translate(220, 0)">
+      <rect x="0" y="0" width="370" height="120" rx="14" fill="#fff" stroke="#9ca3af" stroke-width="2.5"/>
+      <text x="185" y="22" text-anchor="middle" fill="#6b7280" font-size="14" font-weight="700">Before</text>
+      <text x="185" y="68" text-anchor="middle" dominant-baseline="central" fill="#9ca3af" font-weight="700" font-size="40">1〜2時間</text>
+      <text x="185" y="103" text-anchor="middle" fill="#6b7280" font-size="14">／1枚</text>
+    </g>
+    <!-- After -->
+    <g transform="translate(690, 0)">
+      <rect x="0" y="0" width="370" height="120" rx="14" fill="#fef3e2" stroke="#f59e0b" stroke-width="3"/>
+      <text x="185" y="22" text-anchor="middle" fill="#f59e0b" font-size="14" font-weight="700">After</text>
+      <text x="185" y="68" text-anchor="middle" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="48">10分</text>
+      <text x="185" y="103" text-anchor="middle" fill="#1f2937" font-size="14" font-weight="600">／複数枚まとめて</text>
+    </g>
+  </g>
+
+  <!-- フッターキャッチ -->
+  <g>
+    <rect x="200" y="608" width="880" height="42" rx="21" fill="#fff" stroke="#fde6c1" stroke-width="1.5"/>
+    <circle cx="232" cy="629" r="6" fill="#f59e0b"/>
+    <text x="254" y="629" dominant-baseline="central" fill="#1f2937" font-weight="600" font-size="18" letter-spacing="0.5">運用が先で、スキルは後からついてくる</text>
+  </g>
+</svg>
