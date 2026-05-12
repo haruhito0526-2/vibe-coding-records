@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <text x="80" y="60" fill="#1f2937" font-weight="700" font-size="50" dominant-baseline="hanging">8割は揃っていた。問題は2割のほうだった</text>
+  <line x1="80" y1="140" x2="260" y2="140" stroke="#f59e0b" stroke-width="5"/>
+
+  <!-- 上：資料の中身（8割：2割） -->
+  <g transform="translate(80, 210)">
+    <text x="0" y="0" fill="#6b7280" font-weight="700" font-size="50" dominant-baseline="hanging">資料の中身</text>
+  </g>
+  <g transform="translate(80, 290)">
+    <rect x="0" y="0" width="900" height="90" fill="#a8d4ee"/>
+    <text x="450" y="45" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="50">共通テンプレ ／ 8割</text>
+    <rect x="900" y="0" width="220" height="90" fill="#f59e0b"/>
+    <text x="1010" y="45" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="50">2割</text>
+  </g>
+
+  <!-- 下：かかっていた時間（数分：半日／見た目2:8、くっつける） -->
+  <g transform="translate(80, 440)">
+    <text x="0" y="0" fill="#6b7280" font-weight="700" font-size="50" dominant-baseline="hanging">かかっていた時間</text>
+  </g>
+  <g transform="translate(80, 520)">
+    <rect x="0" y="0" width="220" height="90" fill="#a8d4ee"/>
+    <text x="110" y="45" text-anchor="middle" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="50">数分</text>
+    <rect x="220" y="0" width="900" height="90" fill="#f59e0b"/>
+    <text x="670" y="45" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="700" font-size="50">半日（2割に溶けていた）</text>
+  </g>
+</svg>

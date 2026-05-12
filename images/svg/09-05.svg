@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="GA4・実績DB・営業資料・見積もり・メルマガが循環し、顧客プロファイルを中心に連動する">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <text x="80" y="60" fill="#1f2937" font-weight="700" font-size="50" dominant-baseline="hanging">仕組みが連動して、顧客管理＋営業支援へ</text>
+  <line x1="80" y1="140" x2="260" y2="140" stroke="#f59e0b" stroke-width="5"/>
+
+  <defs>
+    <marker id="arrow5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3a7ba8"/>
+    </marker>
+  </defs>
+
+  <!-- 循環矢印（時計回り、円弧） -->
+  <!-- GA4(640,200) → 実績DB(849,352) -->
+  <path d="M 684 232 A 220 220 0 0 1 804 320" fill="none" stroke="#3a7ba8" stroke-width="4" marker-end="url(#arrow5)"/>
+  <!-- 実績DB(849,352) → 営業資料(769,598) -->
+  <path d="M 832 404 A 220 220 0 0 1 786 546" fill="none" stroke="#3a7ba8" stroke-width="4" marker-end="url(#arrow5)"/>
+  <!-- 営業資料(769,598) → 見積もり(511,598) -->
+  <path d="M 714 598 A 220 220 0 0 1 566 598" fill="none" stroke="#3a7ba8" stroke-width="4" marker-end="url(#arrow5)"/>
+  <!-- 見積もり(511,598) → メルマガ(431,352) -->
+  <path d="M 494 546 A 220 220 0 0 1 448 404" fill="none" stroke="#3a7ba8" stroke-width="4" marker-end="url(#arrow5)"/>
+  <!-- メルマガ(431,352) → GA4(640,200) -->
+  <path d="M 476 320 A 220 220 0 0 1 596 232" fill="none" stroke="#3a7ba8" stroke-width="4" marker-end="url(#arrow5)"/>
+
+  <!-- 中央：顧客プロファイル -->
+  <circle cx="640" cy="420" r="120" fill="#3a7ba8"/>
+  <text x="640" y="408" text-anchor="middle" fill="#fff" font-weight="700" font-size="42">顧客</text>
+  <text x="640" y="452" text-anchor="middle" fill="#fff" font-weight="700" font-size="32">プロファイル</text>
+
+  <!-- 12時：GA4（第7話） -->
+  <g>
+    <circle cx="640" cy="200" r="55" fill="#fff" stroke="#3a7ba8" stroke-width="4"/>
+    <g transform="translate(610, 178)">
+      <line x1="0" y1="32" x2="60" y2="32" stroke="#3a7ba8" stroke-width="2.5"/>
+      <line x1="0" y1="6" x2="0" y2="32" stroke="#3a7ba8" stroke-width="2.5"/>
+      <polyline points="0,24 14,16 28,8 42,16 56,4" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+    <text x="725" y="193" text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="36">GA4</text>
+    <text x="725" y="233" text-anchor="start" dominant-baseline="central" fill="#6b7280" font-weight="700" font-size="24">第7話</text>
+  </g>
+
+  <!-- 2.4時：実績DB（第8話） -->
+  <g>
+    <circle cx="849" cy="352" r="55" fill="#fff" stroke="#3a7ba8" stroke-width="4"/>
+    <g transform="translate(822, 329)">
+      <rect width="54" height="46" rx="3" fill="none" stroke="#3a7ba8" stroke-width="2.5"/>
+      <line x1="0" y1="16" x2="54" y2="16" stroke="#3a7ba8" stroke-width="2"/>
+      <line x1="0" y1="30" x2="54" y2="30" stroke="#3a7ba8" stroke-width="2"/>
+      <line x1="27" y1="0" x2="27" y2="46" stroke="#3a7ba8" stroke-width="2"/>
+    </g>
+    <text x="935" y="345" text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="36">実績DB</text>
+    <text x="935" y="385" text-anchor="start" dominant-baseline="central" fill="#6b7280" font-weight="700" font-size="24">第8話</text>
+  </g>
+
+  <!-- 4.8時：営業資料（第9話、いまここ） -->
+  <g>
+    <circle cx="769" cy="598" r="55" fill="#fff" stroke="#f59e0b" stroke-width="5"/>
+    <g transform="translate(749, 573)">
+      <rect width="40" height="50" rx="4" fill="#fef3e2" stroke="#f59e0b" stroke-width="2.5"/>
+      <line x1="8" y1="14" x2="32" y2="14" stroke="#f59e0b" stroke-width="2.5"/>
+      <line x1="8" y1="24" x2="32" y2="24" stroke="#f59e0b" stroke-width="2.5"/>
+      <line x1="8" y1="34" x2="26" y2="34" stroke="#f59e0b" stroke-width="2.5"/>
+    </g>
+    <text x="855" y="590" text-anchor="start" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="36">営業資料</text>
+    <text x="855" y="628" text-anchor="start" dominant-baseline="central" fill="#f59e0b" font-weight="700" font-size="24">第9話：いまここ</text>
+  </g>
+
+  <!-- 7.2時：見積もり -->
+  <g>
+    <circle cx="511" cy="598" r="55" fill="#fff" stroke="#cfe5f3" stroke-width="4" stroke-dasharray="6,4"/>
+    <text x="511" y="608" text-anchor="middle" dominant-baseline="central" fill="#6b7280" font-weight="700" font-size="52">¥</text>
+    <text x="425" y="590" text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="36">見積もり</text>
+    <text x="425" y="628" text-anchor="end" dominant-baseline="central" fill="#6b7280" font-weight="700" font-size="24">準備中</text>
+  </g>
+
+  <!-- 9.6時：メルマガ -->
+  <g>
+    <circle cx="431" cy="352" r="55" fill="#fff" stroke="#cfe5f3" stroke-width="4" stroke-dasharray="6,4"/>
+    <g transform="translate(403, 334)">
+      <rect width="56" height="36" rx="4" fill="none" stroke="#6b7280" stroke-width="2.5"/>
+      <polyline points="0,4 28,24 56,4" fill="none" stroke="#6b7280" stroke-width="2.5"/>
+    </g>
+    <text x="345" y="345" text-anchor="end" dominant-baseline="central" fill="#1f2937" font-weight="700" font-size="36">メルマガ</text>
+    <text x="345" y="385" text-anchor="end" dominant-baseline="central" fill="#6b7280" font-weight="700" font-size="24">近日公開</text>
+  </g>
+</svg>

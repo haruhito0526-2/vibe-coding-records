@@ -18,6 +18,7 @@ desktop.ini
 # Editor
 .vscode/
 .idea/
+.obsidian/
 
 # Playwright
 .playwright/

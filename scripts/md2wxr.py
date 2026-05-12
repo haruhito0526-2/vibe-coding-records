@@ -35,7 +35,7 @@ import argparse
 import re
 import shutil
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta, date as date_cls
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -45,10 +45,16 @@ import markdown as md_lib
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_ARTICLES_DIR = ROOT / "articles"
 DEFAULT_OUTPUT_DIR = ROOT / "wxr"
+DEFAULT_SVG_DIR = ROOT / "images" / "svg"
 DEFAULT_PNG_DIR = ROOT / "images" / "png"
-NOTE_IMPORT_DIR = Path(r"J:\マイドライブ\AI_support_Projects\note-import")
+NOTE_ROOT_DIR = Path(r"J:\マイドライブ\AI_support_Projects\NOTE執筆")
+NOTE_IMPORT_DIR = NOTE_ROOT_DIR / "note-import"
+NOTE_ARTICLES_MIRROR_DIR = NOTE_ROOT_DIR / "articles"
+NOTE_SVG_MIRROR_DIR = NOTE_ROOT_DIR / "images" / "svg"
+NOTE_PNG_MIRROR_DIR = NOTE_ROOT_DIR / "images" / "png"
 PAGES_BASE_URL = "https://haryukin9.github.io/vibe-coding-records"
 SITE_TITLE = "vibe-coding-records"
+JST = timezone(timedelta(hours=9))
 
 MARKDOWN_EXTENSIONS = ["fenced_code", "tables", "nl2br", "sane_lists"]
 
@@ -135,15 +141,33 @@ def to_rfc822(dt: datetime) -> str:
 
 
 def parse_date(value, fallback_path: Path) -> datetime:
+    """front matterのdateをJSTとして解釈する。
+
+    - 値なし → ファイルmtimeをJSTで返す
+    - date型（時刻なし） → JST 09:00:00
+    - datetime型（tzinfoなし） → JSTとして扱う
+    - datetime型（tzinfoあり） → そのまま
+    - 文字列 'YYYY-MM-DD' → JST 09:00:00
+    - 文字列 'YYYY-MM-DD HH:MM:SS' → JSTとして解釈
+    """
     if value is None:
         ts = fallback_path.stat().st_mtime
-        return datetime.fromtimestamp(ts, tz=timezone.utc)
+        return datetime.fromtimestamp(ts, tz=JST)
     if isinstance(value, datetime):
-        return value if value.tzinfo else value.replace(tzinfo=timezone.utc)
+        return value if value.tzinfo else value.replace(tzinfo=JST)
+    if isinstance(value, date_cls):
+        return datetime(value.year, value.month, value.day, 9, 0, 0, tzinfo=JST)
     s = str(value)
-    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d", "%Y/%m/%d"):
+    for fmt in ("%Y-%m-%d", "%Y/%m/%d"):
         try:
-            return datetime.strptime(s, fmt).replace(tzinfo=timezone.utc)
+            d = datetime.strptime(s, fmt)
+            return d.replace(hour=9, minute=0, second=0, tzinfo=JST)
+        except ValueError:
+            continue
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M",
+                "%Y/%m/%d %H:%M:%S", "%Y/%m/%d %H:%M"):
+        try:
+            return datetime.strptime(s, fmt).replace(tzinfo=JST)
         except ValueError:
             continue
     raise ValueError(f"日付の形式を解釈できません: {value}")
@@ -217,6 +241,33 @@ def sync_to_note_import(md_path: Path, wxr_path: Path, note_import_dir: Path,
     print(f"[note-import] WARN: アイキャッチが見つかりません ({md_stem}-eyecatch.png)")
 
 
+def sync_to_note_mirror(md_path: Path, articles_mirror_dir: Path,
+                        svg_dir: Path, png_dir: Path,
+                        svg_mirror_dir: Path, png_mirror_dir: Path) -> None:
+    """NOTE執筆配下に md/SVG/PNG をミラーする。
+
+    md は articles_mirror_dir に、SVG/PNG は記事番号プレフィックス（例：07-*）で
+    マッチするものを各ミラーディレクトリにコピーする。
+    """
+    articles_mirror_dir.mkdir(parents=True, exist_ok=True)
+    svg_mirror_dir.mkdir(parents=True, exist_ok=True)
+    png_mirror_dir.mkdir(parents=True, exist_ok=True)
+
+    dest_md = articles_mirror_dir / md_path.name
+    shutil.copy2(md_path, dest_md)
+    print(f"[NOTE執筆] md -> {dest_md.name}")
+
+    prefix = md_path.stem.split("-")[0]
+    for src in sorted(svg_dir.glob(f"{prefix}-*.svg")):
+        dest = svg_mirror_dir / src.name
+        shutil.copy2(src, dest)
+        print(f"[NOTE執筆] svg -> {dest.name}")
+    for src in sorted(png_dir.glob(f"{prefix}-*.png")):
+        dest = png_mirror_dir / src.name
+        shutil.copy2(src, dest)
+        print(f"[NOTE執筆] png -> {dest.name}")
+
+
 def collect_targets(args) -> list[Path]:
     if args.all:
         articles_dir = Path(args.articles_dir).resolve()
@@ -263,8 +314,17 @@ def run(args):
     # note-importフォルダへの同期（--all 一括変換時はスキップ）
     if not args.no_note_import and not args.all:
         note_import_dir = Path(args.note_import_dir)
+        svg_dir = Path(args.svg_dir)
         png_dir = Path(args.png_dir)
         sync_to_note_import(targets[0], out_path, note_import_dir, png_dir)
+        sync_to_note_mirror(
+            targets[0],
+            articles_mirror_dir=Path(args.articles_mirror_dir),
+            svg_dir=svg_dir,
+            png_dir=png_dir,
+            svg_mirror_dir=Path(args.svg_mirror_dir),
+            png_mirror_dir=Path(args.png_mirror_dir),
+        )
 
 
 def main():
@@ -278,10 +338,18 @@ def main():
     parser.add_argument("--status", default="draft", choices=["draft", "publish"])
     parser.add_argument("--note-import-dir", default=str(NOTE_IMPORT_DIR),
                         help="WXRとアイキャッチPNGのコピー先（Googleドライブ等）")
+    parser.add_argument("--svg-dir", default=str(DEFAULT_SVG_DIR),
+                        help="ローカルSVG探索元ディレクトリ")
     parser.add_argument("--png-dir", default=str(DEFAULT_PNG_DIR),
-                        help="アイキャッチPNGの探索元ディレクトリ")
+                        help="アイキャッチ・本文PNGの探索元ディレクトリ")
+    parser.add_argument("--articles-mirror-dir", default=str(NOTE_ARTICLES_MIRROR_DIR),
+                        help="NOTE執筆/articles ミラー先")
+    parser.add_argument("--svg-mirror-dir", default=str(NOTE_SVG_MIRROR_DIR),
+                        help="NOTE執筆/images/svg ミラー先")
+    parser.add_argument("--png-mirror-dir", default=str(NOTE_PNG_MIRROR_DIR),
+                        help="NOTE執筆/images/png ミラー先")
     parser.add_argument("--no-note-import", action="store_true",
-                        help="note-importフォルダへのコピーをスキップする")
+                        help="note-importフォルダおよびNOTE執筆ミラーへのコピーをスキップする")
     args = parser.parse_args()
     run(args)
 

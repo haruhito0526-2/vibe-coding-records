@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" width="100%" preserveAspectRatio="xMidYMid meet">
+  <rect width="1280" height="670" fill="#f8f9fa"/>
+
+  <text x="80" y="60" fill="#1f2937" font-weight="700" font-size="50" dominant-baseline="hanging">Claudeの役割を分ける</text>
+  <line x1="80" y1="140" x2="260" y2="140" stroke="#f59e0b" stroke-width="5"/>
+
+  <!-- 左：Claude Design -->
+  <g transform="translate(60, 210)">
+    <rect width="540" height="400" rx="20" fill="#fff" stroke="#3a7ba8" stroke-width="4"/>
+    <rect width="540" height="100" rx="20" fill="#3a7ba8"/>
+    <rect y="80" width="540" height="20" fill="#3a7ba8"/>
+    <text x="270" y="40" text-anchor="middle" dominant-baseline="central" font-weight="700" font-size="40" fill="#fff">Claude Design</text>
+    <text x="270" y="78" text-anchor="middle" dominant-baseline="central" font-weight="600" font-size="26" fill="#a8d4ee">デザイン担当</text>
+
+    <!-- 配色を踏襲 -->
+    <g transform="translate(50, 160)">
+      <circle cx="22" cy="20" r="20" fill="#1d4d72"/>
+      <circle cx="56" cy="14" r="16" fill="#3a7ba8"/>
+      <circle cx="86" cy="22" r="14" fill="#5da8d4"/>
+      <circle cx="112" cy="30" r="12" fill="#a8d4ee"/>
+      <text x="160" y="22" font-weight="700" font-size="40" fill="#1f2937" dominant-baseline="central">配色を踏襲</text>
+    </g>
+
+    <!-- レイアウト -->
+    <g transform="translate(50, 230)">
+      <rect x="0" y="0" width="100" height="56" rx="4" fill="none" stroke="#3a7ba8" stroke-width="4"/>
+      <rect x="8" y="8" width="36" height="40" fill="#a8d4ee"/>
+      <rect x="52" y="8" width="40" height="16" fill="#a8d4ee"/>
+      <rect x="52" y="32" width="40" height="16" fill="#a8d4ee"/>
+      <text x="160" y="28" font-weight="700" font-size="40" fill="#1f2937" dominant-baseline="central">レイアウト</text>
+    </g>
+
+    <!-- SVG図表 -->
+    <g transform="translate(50, 310)">
+      <line x1="0" y1="0" x2="0" y2="48" stroke="#3a7ba8" stroke-width="3"/>
+      <line x1="0" y1="48" x2="100" y2="48" stroke="#3a7ba8" stroke-width="3"/>
+      <polyline points="0,40 22,28 44,18 66,26 88,10" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="0" cy="40" r="4" fill="#f59e0b"/>
+      <circle cx="22" cy="28" r="4" fill="#f59e0b"/>
+      <circle cx="44" cy="18" r="4" fill="#f59e0b"/>
+      <circle cx="66" cy="26" r="4" fill="#f59e0b"/>
+      <circle cx="88" cy="10" r="4" fill="#f59e0b"/>
+      <text x="160" y="24" font-weight="700" font-size="40" fill="#1f2937" dominant-baseline="central">SVG図表</text>
+    </g>
+  </g>
+
+  <!-- 引き継ぎ矢印（中央） -->
+  <g transform="translate(620, 410)">
+    <path d="M 0,0 L 60,0" stroke="#f59e0b" stroke-width="12" stroke-linecap="round"/>
+    <polygon points="56,-22 88,0 56,22" fill="#f59e0b"/>
+  </g>
+
+  <!-- 右：Claude Code（同サイズ、中身を中央寄せ） -->
+  <g transform="translate(720, 210)">
+    <rect width="540" height="400" rx="20" fill="#fff" stroke="#3a7ba8" stroke-width="4"/>
+    <rect width="540" height="100" rx="20" fill="#1d4d72"/>
+    <rect y="80" width="540" height="20" fill="#1d4d72"/>
+    <text x="270" y="40" text-anchor="middle" dominant-baseline="central" font-weight="700" font-size="40" fill="#fff">Claude Code</text>
+    <text x="270" y="78" text-anchor="middle" dominant-baseline="central" font-weight="600" font-size="26" fill="#a8d4ee">自動化担当</text>
+
+    <!-- プロファイルを読む -->
+    <g transform="translate(50, 160)">
+      <rect x="0" y="0" width="50" height="56" rx="4" fill="#fef3e2" stroke="#f59e0b" stroke-width="3"/>
+      <line x1="10" y1="14" x2="40" y2="14" stroke="#f59e0b" stroke-width="3"/>
+      <line x1="10" y1="26" x2="40" y2="26" stroke="#f59e0b" stroke-width="3"/>
+      <line x1="10" y1="38" x2="30" y2="38" stroke="#f59e0b" stroke-width="3"/>
+      <text x="80" y="28" font-weight="700" font-size="40" fill="#1f2937" dominant-baseline="central">プロファイルを読む</text>
+    </g>
+
+    <!-- DBから実績を引く -->
+    <g transform="translate(50, 240)">
+      <rect x="0" y="0" width="50" height="56" rx="4" fill="none" stroke="#3a7ba8" stroke-width="3"/>
+      <line x1="0" y1="18" x2="50" y2="18" stroke="#3a7ba8" stroke-width="3"/>
+      <line x1="0" y1="37" x2="50" y2="37" stroke="#3a7ba8" stroke-width="3"/>
+      <line x1="25" y1="0" x2="25" y2="56" stroke="#3a7ba8" stroke-width="3"/>
+      <text x="80" y="28" font-weight="700" font-size="40" fill="#1f2937" dominant-baseline="central">DBから実績を引く</text>
+    </g>
+
+    <!-- HTMLを書き出す -->
+    <g transform="translate(50, 320)">
+      <rect x="0" y="0" width="50" height="56" rx="4" fill="#1d4d72"/>
+      <text x="25" y="34" text-anchor="middle" dominant-baseline="central" font-weight="700" font-size="22" fill="#fff">&lt;/&gt;</text>
+      <text x="80" y="28" font-weight="700" font-size="40" fill="#1f2937" dominant-baseline="central">HTMLを書き出す</text>
+    </g>
+  </g>
+</svg>

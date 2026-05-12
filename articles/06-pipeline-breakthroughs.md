@@ -1,6 +1,6 @@
 ---
 title: 【ひとりDX担当の記録】このnote連載、ほぼスマホだけで作っています（後編：3つのブレイクスルー）
-date: 2026-05-01
+date: 2026-07-01
 slug: pipeline-breakthroughs
 excerpt: 前編で書いた「ほぼスマホで作っています」を支えた、3つのブレイクスルーの話。ナノバナナをAPIで動かす、図解はSVGで作らせる、note取り込み用XMLの仕様を読み解く。
 tags: [vibe-coding, claude-code, dx, 内製化, ひとりDX担当の記録]
